@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tester SimSell - Simulation de vente en pharmacie</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .apple-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-background-dark text-[#0d141b] dark:text-slate-100 transition-colors duration-300">
+
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-background-dark/80 apple-blur border-b border-gray-100 dark:border-gray-800">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+            <div class="size-8 text-primary">
+                <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+                </svg>
+            </div>
+            <span class="text-lg sm:text-xl font-bold tracking-tight">VirtualRetail</span>
+        </a>
+        
+        <a href="index.html" class="text-sm font-medium hover:text-primary transition-colors">
+            ← Retour
+        </a>
+    </div>
+</header>
+
+<main class="pt-16">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-primary/5 to-white dark:from-primary/10 dark:to-background-dark py-16 sm:py-24">
+        <div class="max-w-[900px] mx-auto px-4 sm:px-6 text-center">
+            <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <span class="material-symbols-outlined" style="font-size: 20px;">psychology</span>
+                Simulation interactive
+            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight mb-6">
+                Testez vos compétences de conseil en pharmacie
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+                Mettez-vous dans la peau d'un vendeur et conseillez un client virtuel sur la mélatonine. Une expérience immersive pour améliorer votre technique de vente.
+            </p>
+        </div>
+    </section>
+
+    <!-- Instructions Section -->
+    <section class="py-16 sm:py-20 bg-white dark:bg-background-dark">
+        <div class="max-w-[900px] mx-auto px-4 sm:px-6">
+            <div class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-center">Comment fonctionne la simulation ?</h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    Suivez ces étapes pour vivre une expérience de vente réaliste et recevoir un feedback détaillé.
+                </p>
+            </div>
+
+            <div class="space-y-6 mb-16">
+                <!-- Étape 1 -->
+                <div class="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-[#f5f5f7] dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                        1
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Le contexte</h3>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Vous incarnez un vendeur en pharmacie. Un client entre avec des <strong>problèmes de sommeil</strong> et cherche une solution. Votre mission : le conseiller sur la <strong>mélatonine</strong> et le convaincre d'acheter.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Étape 2 -->
+                <div class="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-[#f5f5f7] dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                        2
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Le déroulement</h3>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                            À chaque étape, vous devez <strong>choisir une réponse</strong> parmi plusieurs options. Le client virtuel (avatar) réagit en temps réel à vos choix.
+                        </p>
+                        <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1">•</span>
+                                <span>Cliquez sur votre réponse pour avancer dans la conversation</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1">•</span>
+                                <span>L'avatar répond et vous guide vers l'étape suivante</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary mt-1">•</span>
+                                <span>Continuez jusqu'à la conclusion de la vente</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Étape 3 -->
+                <div class="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-[#f5f5f7] dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                        3
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Le système de notation</h3>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                            Chaque réponse est notée de <strong>0 à 5 points</strong> selon sa pertinence :
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-3">
+                            <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-900 rounded-lg">
+                                <div class="w-10 h-10 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-lg flex items-center justify-center font-bold">
+                                    0-2
+                                </div>
+                                <span class="text-sm font-medium">Vous perdez des points</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-900 rounded-lg">
+                                <div class="w-10 h-10 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-lg flex items-center justify-center font-bold">
+                                    3
+                                </div>
+                                <span class="text-sm font-medium">Réponse neutre (0 point)</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-900 rounded-lg">
+                                <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-lg flex items-center justify-center font-bold">
+                                    4
+                                </div>
+                                <span class="text-sm font-medium">Bonne réponse (+1 point)</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-900 rounded-lg">
+                                <div class="w-10 h-10 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-lg flex items-center justify-center font-bold">
+                                    5
+                                </div>
+                                <span class="text-sm font-medium">Excellente réponse (+2 points)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Étape 4 -->
+                <div class="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-[#f5f5f7] dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                        4
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Le bilan explicatif</h3>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            À la fin de la simulation, vous recevez un <strong>bilan détaillé</strong> de votre performance avec des conseils personnalisés pour améliorer votre technique de vente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Étape 5 -->
+                <div class="flex gap-4 sm:gap-6 p-6 sm:p-8 bg-[#f5f5f7] dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
+                    <div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                        5
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Le questionnaire d'écoute active</h3>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                            Après le bilan, répondez à un <strong>QCM d'écoute active</strong> pour valider votre compréhension du client.
+                        </p>
+                        <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                            <li class="flex items-start gap-2">
+                                <span class="text-green-500 mt-1">✓</span>
+                                <span><strong>Bonnes réponses :</strong> vous gagnez des points bonus</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-gray-400 mt-1">✗</span>
+                                <span><strong>Mauvaises réponses :</strong> aucun point n'est retiré</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Form Section -->
+            <div class="bg-gradient-to-br from-primary/5 to-blue-50 dark:from-primary/10 dark:to-gray-800 p-8 sm:p-10 rounded-3xl border border-primary/20">
+                <div class="max-w-2xl mx-auto text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-primary text-4xl">mail</span>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-4">Avant de commencer</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
+                        Nous vous demandons votre email pour vous communiquer les <strong>informations complémentaires au feedback du jour</strong>. 
+                        Vous ne serez pas inscrit à une newsletter, seule l'équipe Metagora aura votre mail pour échanger sur la solution uniquement.
+                    </p>
+                    
+                    <form id="emailForm" class="space-y-4">
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <input 
+                                type="email" 
+                                id="emailInput"
+                                required
+                                placeholder="votre.email@exemple.com" 
+                                class="flex-1 h-14 px-6 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-base"
+                            />
+                            <button 
+                                type="submit"
+                                class="h-14 px-8 bg-primary hover:bg-primary/90 text-white rounded-xl font-bold text-lg shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 whitespace-nowrap"
+                            >
+                                Commencer la simulation
+                            </button>
+                        </div>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">
+                            <span class="material-symbols-outlined text-sm align-middle">lock</span>
+                            Vos données sont sécurisées et ne seront jamais partagées avec des tiers.
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Info Box -->
+            <div class="mt-12 p-6 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-2xl">
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-blue-600 dark:text-blue-400 flex-shrink-0">info</span>
+                    <div>
+                        <h4 class="font-bold text-blue-900 dark:text-blue-100 mb-2">Durée estimée : 5-7 minutes</h4>
+                        <p class="text-sm text-blue-800 dark:text-blue-200">
+                            Prenez votre temps pour réfléchir à chaque réponse. La qualité de votre conseil est plus importante que la vitesse.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#f5f5f7] dark:bg-background-dark py-8 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 opacity-60">
+                <div class="size-6 text-current">
+                    <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+                    </svg>
+                </div>
+                <span class="text-sm font-bold">VirtualRetail</span>
+            </div>
+            <p class="text-sm text-gray-400">
+                © 2024 VirtualRetail Assistant. Tous droits réservés.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('emailForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('emailInput').value;
+        
+        if (email) {
+            // Stocker l'email (vous pouvez l'envoyer à votre backend ici)
+            localStorage.setItem('userEmail', email);
+            
+            // Rediriger vers la simulation (à créer)
+            alert('Merci ! La simulation complète sera bientôt disponible.\n\nVotre email : ' + email + '\n\nNous vous contacterons dès que la simulation sera prête.');
+            
+            // Pour l'instant, retour à l'accueil
+            // window.location.href = 'simulation.html'; // À créer plus tard
+        }
+    });
+</script>
+
+</body>
+</html>
