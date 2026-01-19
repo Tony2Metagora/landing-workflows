@@ -1,0 +1,6 @@
+# Ignorer les sous-dossiers de projets (ils ont leur propre Git)
+landing-*/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
