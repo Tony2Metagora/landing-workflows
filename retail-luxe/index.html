@@ -193,6 +193,8 @@
     .logos-row { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
     .logos-row img { height: 36px; width: auto; opacity: 0.6; transition: opacity 0.2s; }
     .logos-row img:hover { opacity: 1; }
+    .logos-row img[alt="LVMH"] { height: 28px; }
+    .logos-row img[alt="Carrefour"] { height: 42px; }
 
     /* FEATURE TABS */
     .feature-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
@@ -483,7 +485,7 @@
     <div class="container">
       <p class="logos-label">Adopté par des acteurs majeurs du retail et du luxe</p>
       <div class="logos-row">
-        <img src="assets/images/logo-lvmh.png" alt="LVMH">
+        <img src="assets/images/logo-lvmh.png" alt="LVMH" style="filter: brightness(0) saturate(100%) opacity(0.6);">
         <img src="assets/images/logo-amazon.svg" alt="Amazon">
         <img src="assets/images/logo-carrefour.svg" alt="Carrefour">
       </div>
