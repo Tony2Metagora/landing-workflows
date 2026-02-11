@@ -84,8 +84,8 @@
       display: flex; align-items: center; justify-content: space-between;
       max-width: 1160px; margin: 0 auto; padding: 0 24px;
     }
-    .nav-logo { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--text-dark); text-decoration: none; }
-    .nav-logo span { color: var(--accent); }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo img { height: 32px; width: auto; }
     .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
     .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: var(--text-dark); }
@@ -95,7 +95,7 @@
       transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
     }
     .nav-cta:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 4px 14px var(--accent-glow); }
-    @media (max-width: 768px) { .nav-links { display: none; } }
+    @media (max-width: 768px) { .nav-links { display: none; } .nav-logo img { height: 26px; } }
 
     /* HERO */
     .hero {
@@ -436,7 +436,7 @@
 <body>
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">Meta<span>gora</span></a>
+      <a href="#" class="nav-logo"><img src="assets/images/Logo-Metagora-Black.png" alt="Metagora"></a>
       <ul class="nav-links">
         <li><a href="#solution">Solution</a></li>
         <li><a href="#process">Processus</a></li>
@@ -483,7 +483,7 @@
     <div class="container">
       <p class="logos-label">Adopté par des acteurs majeurs du retail et du luxe</p>
       <div class="logos-row">
-        <img src="assets/images/logo-lvmh.svg" alt="LVMH">
+        <img src="assets/images/logo-lvmh.png" alt="LVMH">
         <img src="assets/images/logo-amazon.svg" alt="Amazon">
         <img src="assets/images/logo-carrefour.svg" alt="Carrefour">
       </div>
