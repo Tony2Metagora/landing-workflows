@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metagora — L'entraînement retail qui ressemble à la vraie vente</title>
+  <title>Metagora x Louis Vuitton — L'entraînement retail qui ressemble à la vraie vente</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -84,8 +84,10 @@
       display: flex; align-items: center; justify-content: space-between;
       max-width: 1160px; margin: 0 auto; padding: 0 24px;
     }
-    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; gap: 14px; }
     .nav-logo img { height: 32px; width: auto; }
+    .nav-logo .logo-separator { width: 1px; height: 28px; background: var(--border); }
+    .nav-logo .logo-brand { height: 36px; width: auto; }
     .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
     .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: var(--text-dark); }
@@ -95,7 +97,7 @@
       transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
     }
     .nav-cta:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 4px 14px var(--accent-glow); }
-    @media (max-width: 768px) { .nav-links { display: none; } .nav-logo img { height: 26px; } }
+    @media (max-width: 768px) { .nav-links { display: none; } .nav-logo img { height: 26px; } .nav-logo .logo-brand { height: 30px; } .nav-logo .logo-separator { height: 22px; } }
 
     /* HERO */
     .hero {
@@ -375,6 +377,30 @@
     .partner-item:hover { opacity: 1; }
     .partner-item img { height: 43px; width: auto; }
 
+    /* BOUTIQUE SECTION */
+    .boutique-section { background: var(--bg-primary); }
+    .boutique-block { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .boutique-visual {
+      border-radius: var(--radius-xl); overflow: hidden;
+      box-shadow: var(--shadow-lg); aspect-ratio: 4/3;
+    }
+    .boutique-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .boutique-content { display: flex; flex-direction: column; gap: 20px; }
+    .boutique-address { font-size: 0.88rem; color: var(--text-muted); display: flex; align-items: flex-start; gap: 8px; }
+    .boutique-address::before { content: '📍'; }
+    .kpi-cards { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
+    .kpi-card {
+      background: var(--accent-gradient-light); border: 1px solid var(--border-accent);
+      border-radius: var(--radius-md); padding: 20px 24px;
+    }
+    .kpi-number { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+    .kpi-label { font-size: 0.88rem; color: var(--text-body); margin-top: 4px; }
+    .boutique-hook {
+      font-family: var(--font-display); font-size: 1.15rem; font-weight: 600;
+      color: var(--text-dark); line-height: 1.45; margin-top: 8px;
+    }
+    @media (max-width: 768px) { .boutique-block { grid-template-columns: 1fr; gap: 36px; } }
+
     /* CTA */
     .cta-section { background: #0A1628; color: #fff; position: relative; overflow: hidden; }
     .cta-section::before {
@@ -438,7 +464,11 @@
 <body>
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo"><img src="assets/images/Logo-Metagora-Black.png" alt="Metagora"></a>
+      <a href="#" class="nav-logo">
+        <img src="../../assets/images/Logo-Metagora-Black.png" alt="Metagora">
+        <span class="logo-separator"></span>
+        <img src="../../assets/images/boutiques/Louis%20vuitton%20logo.png" alt="Louis Vuitton" class="logo-brand">
+      </a>
       <ul class="nav-links">
         <li><a href="#solution">Solution</a></li>
         <li><a href="#process">Processus</a></li>
@@ -454,7 +484,7 @@
       <div class="hero-content">
         <div class="hero-badge">Coaching IA pour le Retail & le Luxe</div>
         <h1>L'entraînement retail qui ressemble à la <em>vraie vente.</em></h1>
-        <p class="hero-desc">Des clients virtuels IA pour améliorer l'écoute, la posture et la performance de vos conseillers — sans risque pour l'image de marque.</p>
+        <p class="hero-desc">Des clients virtuels IA pour améliorer l'écoute, la posture et la performance de vos Client advisors — sans risque pour l'image de marque.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn-primary">Découvrir en action →</a>
           <a href="#solution" class="btn-secondary">En savoir plus</a>
@@ -463,7 +493,7 @@
       </div>
       <div class="hero-image">
         <div class="hero-image-wrapper">
-          <img src="assets/images/hero-luxe2.png" alt="Interface de simulation de vente Metagora avec client virtuel IA">
+          <img src="../../assets/images/hero-luxe2.png" alt="Interface de simulation de vente Metagora avec client virtuel IA">
         </div>
       </div>
     </div>
@@ -485,9 +515,9 @@
     <div class="container">
       <p class="logos-label">Adopté par des acteurs majeurs du retail et du luxe</p>
       <div class="logos-row">
-        <img src="assets/images/logo-lvmh.png" alt="LVMH" style="filter: brightness(0) saturate(100%) opacity(0.6);">
-        <img src="assets/images/logo-amazon.svg" alt="Amazon">
-        <img src="assets/images/logo-carrefour.svg" alt="Carrefour">
+        <img src="../../assets/images/logo-lvmh.png" alt="LVMH" style="filter: brightness(0) saturate(100%) opacity(0.6);">
+        <img src="../../assets/images/logo-amazon.svg" alt="Amazon">
+        <img src="../../assets/images/logo-carrefour.svg" alt="Carrefour">
       </div>
     </div>
   </section>
@@ -525,13 +555,13 @@
           <h2 class="section-title">La formation retail classique ne suit plus le terrain.</h2>
           <p class="section-subtitle">Former des équipes retail performantes est devenu un défi structurel. L'expérience client devient inégale et la performance commerciale en souffre.</p>
           <ul class="benefit-list">
-            <li><span class="check"></span>Un nouveau conseiller met 6 à 12 mois à être productif</li>
+            <li><span class="check"></span>Un nouveau Client advisor met 6 à 12 mois à être productif</li>
             <li><span class="check"></span>70% des formations oubliées en moins d'une semaine</li>
             <li><span class="check"></span>Les managers manquent de temps pour coacher</li>
             <li><span class="check"></span>L'excellence se dilue d'une boutique à l'autre</li>
           </ul>
         </div>
-        <div class="benefit-visual"><img src="assets/images/Illustration%20%E2%80%94%20Probl%C3%A8mes%20formation%20traditionnelle.jpeg" alt="Problèmes formation traditionnelle"></div>
+        <div class="benefit-visual"><img src="../../assets/images/Illustration%20%E2%80%94%20Probl%C3%A8mes%20formation%20traditionnelle.jpeg" alt="Problèmes formation traditionnelle"></div>
       </div>
     </div>
   </section>
@@ -541,7 +571,7 @@
       <div class="benefit-block reverse fade-in">
         <div class="benefit-text">
           <span class="section-label">Résultats terrain</span>
-          <h2 class="section-title">Préparez vos conseillers avant le premier vrai client.</h2>
+          <h2 class="section-title">Préparez vos Client advisors avant le premier vrai client.</h2>
           <p class="section-subtitle">Simulations réalistes qui construisent la confiance, affûtent le jugement et entraînent à répondre sous pression.</p>
           <ul class="benefit-list">
             <li><span class="check"></span>Conversations authentiques avec notre simulation</li>
@@ -549,7 +579,7 @@
             <li><span class="check"></span>Sessions illimitées, sans aucun risque</li>
           </ul>
         </div>
-        <div class="benefit-visual"><img src="assets/images/Illustration%20%E2%80%94%20Simulation%20conseiller%20%20client%20virtuel.jpeg" alt="Simulation conseiller client virtuel"></div>
+        <div class="benefit-visual"><img src="../../assets/images/Illustration%20%E2%80%94%20Simulation%20conseiller%20%20client%20virtuel.jpeg" alt="Simulation conseiller client virtuel"></div>
       </div>
     </div>
   </section>
@@ -604,7 +634,7 @@
       <h2 class="section-title">Découvrez Metagora en action</h2>
       <p class="section-subtitle mx-auto" style="text-align:center;">Observez une simulation de vente avec un client exigeant.</p>
       <div class="video-wrapper fade-in">
-        <iframe src="https://www.youtube.com/embed/rq-julCOC5A?rel=0&showinfo=0" title="Démonstration Metagora" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/kZiPX1XVn3E?rel=0&showinfo=0" title="Démonstration Metagora" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -623,12 +653,43 @@
             <li><span class="check"></span>Intégré à tous vos outils</li>
           </ul>
         </div>
-        <div class="benefit-visual"><img src="assets/images/Illustration%20%E2%80%94%20D%C3%A9ploiement%20rapide%20multi-devices.jpeg" alt="Déploiement rapide multi-devices"></div>
+        <div class="benefit-visual"><img src="../../assets/images/Illustration%20%E2%80%94%20D%C3%A9ploiement%20rapide%20multi-devices.jpeg" alt="Déploiement rapide multi-devices"></div>
       </div>
     </div>
   </section>
 
-  <!-- Pilot / Sans risque Section -->
+  <!-- Boutique Louis Vuitton Section -->
+  <section class="section boutique-section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 48px;">
+        <span class="section-label">Louis Vuitton Maison Champs-Élysées</span>
+        <h2 class="section-title">Et si on commençait avec votre boutique<br>au 101 avenue des Champs-Élysées ?</h2>
+        <p class="section-subtitle mx-auto" style="text-align:center;">Amenez votre clientelling à l'excellence de votre clientèle</p>
+      </div>
+      <div class="boutique-block fade-in">
+        <div class="boutique-visual">
+          <img src="../../assets/images/boutiques/Boutique%20Louis%20Vuitton%20fr.jpg" alt="Boutique Louis Vuitton Champs-Élysées">
+        </div>
+        <div class="boutique-content">
+          <p class="boutique-address">101 avenue des Champs-Élysées, 75008 Paris</p>
+          <div class="kpi-cards">
+            <div class="kpi-card">
+              <div class="kpi-number">+3 à +5 pts</div>
+              <div class="kpi-label">de taux de conversion sur les clients qualifiés, à périmètre comparable</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-number">10–15%</div>
+              <div class="kpi-label">taux de transformation moyen en boutique luxe mode & maroquinerie — Metagora vous fait passer au niveau supérieur</div>
+            </div>
+          </div>
+          <p class="boutique-hook">3 à 5 points de transfo gagnés pour vos équipes retail — mesurables dès le premier mois.</p>
+          <a href="#contact" class="btn-primary" style="align-self: flex-start;">Prendre rendez-vous →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilot / Fort ROI Section -->
   <section class="section">
     <div class="container text-center">
       <span class="section-label">Fort ROI</span>
@@ -677,8 +738,8 @@
         <div class="solution-card"><h4>📦 Catalogue produits illimité</h4><p>Intégrez tous vos modèles, caractéristiques techniques, histoire et positionnement. Mises à jour en temps réel.</p></div>
         <div class="solution-card"><h4>🌍 Multilingue natif</h4><p>Formez vos équipes dans plus de 90 langues pour accueillir une clientèle internationale avec excellence.</p></div>
         <div class="solution-card"><h4>📈 ROI mesurable</h4><p>Augmentation du panier moyen, réduction du taux d'abandon, satisfaction client. Résultats dès le premier mois.</p></div>
-        <div class="solution-card"><h4>🏆 Argumentaires luxe</h4><p>Valorisez le savoir-faire artisanal, l'héritage de la maison, les matériaux nobles et l'exclusivité des collections.</p></div>
-        <div class="solution-card"><h4>🧠 Techniques de vente premium</h4><p>Écoute active, découverte des besoins implicites, cross-selling subtil et closing élégant.</p></div>
+        <div class="solution-card"><h4>🏆 Cérémonial de vente</h4><p>Valorisez le savoir-faire artisanal, l'héritage de la maison, les matériaux nobles et l'exclusivité des collections.</p></div>
+        <div class="solution-card"><h4>🧠 Cérémonial de vente adapté</h4><p>Écoute active, découverte des besoins implicites, cross-selling subtil et closing élégant.</p></div>
         <div class="solution-card"><h4>🔒 Sans risque</h4><p>Pilote par boutique ou région, scénarios validés avec vos équipes, aucune exposition client réel.</p></div>
       </div>
     </div>
@@ -710,10 +771,10 @@
       <span class="section-label">Partenaires techniques</span>
       <h2 class="section-title">Propulsé par les leaders de l'IA.</h2>
       <div class="partners-row fade-in">
-        <div class="partner-item"><img src="assets/images/logos%20AI/Microsoft%20logo.png" alt="Microsoft"></div>
-        <div class="partner-item"><img src="assets/images/logos%20AI/Nvidia%20logo.png" alt="NVIDIA"></div>
-        <div class="partner-item"><img src="assets/images/logos%20AI/Google%20Cloud%20logo.png" alt="Google Cloud"></div>
-        <div class="partner-item"><img src="assets/images/logos%20AI/Eleven%20Labs%20logo.png" alt="ElevenLabs"></div>
+        <div class="partner-item"><img src="../../assets/images/logos%20AI/Microsoft%20logo.png" alt="Microsoft"></div>
+        <div class="partner-item"><img src="../../assets/images/logos%20AI/Nvidia%20logo.png" alt="NVIDIA"></div>
+        <div class="partner-item"><img src="../../assets/images/logos%20AI/Google%20Cloud%20logo.png" alt="Google Cloud"></div>
+        <div class="partner-item"><img src="../../assets/images/logos%20AI/Eleven%20Labs%20logo.png" alt="ElevenLabs"></div>
       </div>
     </div>
   </section>
