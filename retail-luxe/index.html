@@ -371,8 +371,9 @@
 
     /* PARTNERS */
     .partners-row { display: flex; align-items: center; justify-content: center; gap: 56px; flex-wrap: wrap; margin-top: 40px; }
-    .partner-item { font-size: 1rem; font-weight: 700; color: var(--text-light); display: flex; align-items: center; gap: 8px; transition: color 0.2s; }
-    .partner-item:hover { color: var(--text-body); }
+    .partner-item { display: flex; align-items: center; transition: opacity 0.2s; opacity: 0.6; }
+    .partner-item:hover { opacity: 1; }
+    .partner-item img { height: 32px; width: auto; }
 
     /* CTA */
     .cta-section { background: #0A1628; color: #fff; position: relative; overflow: hidden; }
@@ -616,10 +617,10 @@
           <h2 class="section-title">Des résultats visibles rapidement.</h2>
           <p class="section-subtitle">Metagora s'intègre facilement dans votre organisation retail, sans perturber l'activité en boutique.</p>
           <ul class="benefit-list">
-            <li><span class="check"></span>Pilote en quelques semaines</li>
-            <li><span class="check"></span>Déploiement réseau en moins de 30 jours</li>
+            <li><span class="check"></span>pilote en quelques jours</li>
+            <li><span class="check"></span>+ de 90 langues</li>
             <li><span class="check"></span>Mobile, tablette et ordinateur</li>
-            <li><span class="check"></span>Aucune exposition client réel</li>
+            <li><span class="check"></span>Intégré à tous vos outils</li>
           </ul>
         </div>
         <div class="benefit-visual"><img src="assets/images/Illustration%20%E2%80%94%20D%C3%A9ploiement%20rapide%20multi-devices.jpeg" alt="Déploiement rapide multi-devices"></div>
@@ -630,13 +631,13 @@
   <!-- Pilot / Sans risque Section -->
   <section class="section">
     <div class="container text-center">
-      <span class="section-label">Sans risque</span>
-      <h2 class="section-title">Testez Metagora sans risque pour votre marque.</h2>
+      <span class="section-label">Fort ROI</span>
+      <h2 class="section-title">Testez Metagora pour la meilleure performance</h2>
       <p class="section-subtitle mx-auto" style="text-align:center;">Avant un déploiement global, testez Metagora sur un périmètre maîtrisé.</p>
       <ul class="pilot-list fade-in">
-        <li><span class="pilot-check"></span>Pilote par boutique / région</li>
-        <li><span class="pilot-check"></span>Scénarios validés avec vos équipes</li>
-        <li><span class="pilot-check"></span>Aucune exposition client réel</li>
+        <li><span class="pilot-check"></span>Pilote par boutique quelle que soit la langue</li>
+        <li><span class="pilot-check"></span>Scénarios pour optimiser vos taux de transfo, indices de vente</li>
+        <li><span class="pilot-check"></span>Aucune limite de scénario, de persona, de produits</li>
         <li><span class="pilot-check"></span>Décision basée sur des données réelles</li>
       </ul>
       <p class="pilot-tagline fade-in">Vous avancez par preuve, pas par promesse.</p>
@@ -658,7 +659,7 @@
   <section class="section">
     <div class="container text-center">
       <span class="section-label">Pour qui ?</span>
-      <h2 class="section-title">Conçu pour les organisations retail exigeantes.</h2>
+      <h2 class="section-title">Conçu pour les organisations exigeantes.</h2>
       <div class="personas-grid fade-in">
         <div class="persona-card"><div class="persona-icon">🏪</div><h3>Directeurs Retail / Réseau</h3><p>Standardiser l'excellence sur l'ensemble du réseau de boutiques.</p></div>
         <div class="persona-card"><div class="persona-icon">🎓</div><h3>RH / L&D</h3><p>Industrialiser le coaching et prouver l'impact avec des données concrètes.</p></div>
@@ -689,14 +690,14 @@
       <h2 class="section-title">Des prix adaptés à votre structure.</h2>
       <div class="pricing-card fade-in">
         <div class="pricing-badge">Offre Boutique Luxe</div>
-        <h3>Pour une boutique de luxe</h3>
+        <h3>Pour une boutique XS</h3>
         <div class="pricing-price">350€<span style="font-size:1rem; color:#94a3b8;">/mois</span></div>
         <p class="pricing-price-sub">À partir de — Tarif personnalisé selon le réseau</p>
         <ul class="pricing-features">
-          <li><span class="pf-check">✓</span> Scénarios premium personnalisés</li>
-          <li><span class="pf-check">✓</span> Clients virtuels haute exigence</li>
-          <li><span class="pf-check">✓</span> Catalogue produits personnalisé</li>
-          <li><span class="pf-check">✓</span> Formation continue des équipes</li>
+          <li><span class="pf-check">✓</span> Sans limite de scénario</li>
+          <li><span class="pf-check">✓</span> + de 90 langues</li>
+          <li><span class="pf-check">✓</span> Ensemble de vos produits intégrés</li>
+          <li><span class="pf-check">✓</span> Suivi des résultats en temps réel</li>
           <li><span class="pf-check">✓</span> Support dédié 7j/7</li>
         </ul>
         <a href="#contact" class="btn-primary" style="width:100%; justify-content:center;">Demander un devis personnalisé</a>
@@ -709,10 +710,10 @@
       <span class="section-label">Partenaires techniques</span>
       <h2 class="section-title">Propulsé par les leaders de l'IA.</h2>
       <div class="partners-row fade-in">
-        <div class="partner-item">⊞ Microsoft</div>
-        <div class="partner-item">◆ NVIDIA</div>
-        <div class="partner-item">● Google Cloud</div>
-        <div class="partner-item">🔊 ElevenLabs</div>
+        <div class="partner-item"><img src="assets/images/logos%20AI/Microsoft%20logo.png" alt="Microsoft"></div>
+        <div class="partner-item"><img src="assets/images/logos%20AI/Nvidia%20logo.png" alt="NVIDIA"></div>
+        <div class="partner-item"><img src="assets/images/logos%20AI/Google%20Cloud%20logo.png" alt="Google Cloud"></div>
+        <div class="partner-item"><img src="assets/images/logos%20AI/Eleven%20Labs%20logo.png" alt="ElevenLabs"></div>
       </div>
     </div>
   </section>
@@ -722,7 +723,7 @@
       <div class="cta-inner fade-in">
         <div class="cta-text">
           <span class="section-label">Contact</span>
-          <h2 class="section-title">Découvrez comment Metagora<br>s'adapte à votre réseau retail.</h2>
+          <h2 class="section-title">Découvrez comment Metagora<br>s'adapte à votre réseau.</h2>
           <p class="section-subtitle">Démo personnalisée · Sans engagement · Déploiement rapide</p>
         </div>
         <div class="cta-form-card">
