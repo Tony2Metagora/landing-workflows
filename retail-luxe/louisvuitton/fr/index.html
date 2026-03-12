@@ -87,7 +87,7 @@
     .nav-logo { display: flex; align-items: center; text-decoration: none; gap: 14px; }
     .nav-logo img { height: 32px; width: auto; }
     .nav-logo .logo-separator { width: 1px; height: 28px; background: var(--border); }
-    .nav-logo .logo-brand { height: 36px; width: auto; }
+    .nav-logo .brand-text { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; color: var(--text-dark); white-space: nowrap; }
     .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
     .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
     .nav-links a:hover { color: var(--text-dark); }
@@ -97,7 +97,7 @@
       transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
     }
     .nav-cta:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 4px 14px var(--accent-glow); }
-    @media (max-width: 768px) { .nav-links { display: none; } .nav-logo img { height: 26px; } .nav-logo .logo-brand { height: 30px; } .nav-logo .logo-separator { height: 22px; } }
+    @media (max-width: 768px) { .nav-links { display: none; } .nav-logo img { height: 26px; } .nav-logo .brand-text { font-size: 0.9rem; } .nav-logo .logo-separator { height: 22px; } }
 
     /* HERO */
     .hero {
@@ -373,7 +373,9 @@
     .partners-row { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px; }
     .partner-item { display: flex; align-items: center; justify-content: center; width: 180px; height: 80px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); transition: opacity 0.2s, box-shadow 0.2s; opacity: 0.8; }
     .partner-item:hover { opacity: 1; box-shadow: var(--shadow-md); }
-    .partner-item img { height: 36px; width: auto; max-width: 140px; object-fit: contain; }
+    .partner-item img { height: 40px; width: auto; max-width: 140px; object-fit: contain; }
+    .partner-item img[alt="Microsoft"] { height: 28px; }
+    .partner-item img[alt="ElevenLabs"] { height: 28px; }
 
     /* BOUTIQUE SECTION */
     .boutique-section { background: var(--bg-primary); }
@@ -465,7 +467,7 @@
       <a href="#" class="nav-logo">
         <img src="../../assets/images/Logo-Metagora-Black.png" alt="Metagora">
         <span class="logo-separator"></span>
-        <img src="../../assets/images/boutiques/Louis%20vuitton%20logo.png" alt="Louis Vuitton" class="logo-brand">
+        <span class="brand-text">Pour Louis Vuitton</span>
       </a>
       <ul class="nav-links">
         <li><a href="#solution">Solution</a></li>
