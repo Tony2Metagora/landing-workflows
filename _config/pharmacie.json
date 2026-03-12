@@ -1,0 +1,86 @@
+{
+  "id": "pharmacie",
+  "domain": "metagora-tech.fr/pharmacie",
+  "branding": {
+    "name": "VirtualRetail",
+    "tagline": "L'assistant de vente virtuel du futur",
+    "primaryColor": "#137fec"
+  },
+  "hero": {
+    "title": "La formation vendeur qui fait vraiment vendre",
+    "subtitle": "Entraînez vos équipes en pharmacie avec des clients virtuels ultra-réalistes. Plus de maîtrise conseil, plus de ventes, dès le 2ᵉ mois.",
+    "ctaText": "Tester SimSell",
+    "ctaLink": "test.html",
+    "image": "assets/images/hero.jpg"
+  },
+  "features": {
+    "title": "Pourquoi choisir SimSell pour vos pharmacies ?",
+    "subtitle": "Un entraînement terrain, pensé pour la réalité du point de vente.",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Simulation vendeur 24/7",
+        "description": "Vos équipes s'entraînent quand elles veulent, sur mobile, tablette ou ordinateur. Zéro contrainte planning, zéro salle de formation."
+      },
+      {
+        "icon": "trending_up",
+        "title": "Clients virtuels intelligents",
+        "description": "Générez des patients aux problématiques infinies (douleur, dermo, OTC, conseil expert). L'IA s'adapte aux réponses du vendeur en temps réel."
+      },
+      {
+        "icon": "hub",
+        "title": "Objectifs commerciaux mesurables",
+        "description": "Travaillez l'indice de vente, le panier moyen ou le taux de transformation chaland. Chaque simulation est orientée performance."
+      }
+    ]
+  },
+  "video": {
+    "title": "Découvrez SimSell en situation réelle",
+    "subtitle": "Voyez comment un vendeur s'entraîne face à un client virtuel, comme en officine.",
+    "url": "https://www.youtube.com/embed/rq-julCOC5A?rel=0&showinfo=0"
+  },
+  "solutions": {
+    "title": "Une solution pensée pour la pharmacie moderne",
+    "subtitle": "Former vite, former juste, former à grande échelle.",
+    "items": [
+      {
+        "image": "assets/images/solution-1.jpg",
+        "title": "Scénarios illimités & multi-produits",
+        "description": "Aucune limite de références, de laboratoires ou de gammes. Vos scénarios évoluent avec vos priorités commerciales."
+      },
+      {
+        "image": "assets/images/solution-2.jpg",
+        "title": "Déploiement international instantané",
+        "description": "Disponible en plus de 90 langues, sans adaptation technique. Idéal pour réseaux, groupements et enseignes multi-pays."
+      },
+      {
+        "image": "assets/images/solution-3.jpg",
+        "title": "Impact business rapide",
+        "description": "+5 % de chiffre d'affaires observé dès le deuxième mois. Moins d'erreurs conseil, plus de ventes additionnelles."
+      }
+    ]
+  },
+  "pricing": {
+    "icon": "local_pharmacy",
+    "badge": "Offre Pharmacie",
+    "price": "200€",
+    "period": "mois",
+    "condition": "une pharmacie avec <1M€ de CA annuel",
+    "features": [
+      "Accès illimité aux simulations",
+      "Scénarios personnalisés",
+      "Suivi des performances en temps réel",
+      "Support technique dédié"
+    ]
+  },
+  "partners": true,
+  "contact": {
+    "title": "Prêt à faire progresser vos équipes dès ce mois-ci ?",
+    "subtitle": "Testez SimSell et mesurez l'impact sur vos ventes en conditions réelles."
+  },
+  "simulation": {
+    "url": "https://metaverse.ww.fo/avatarworld/?scenario=scenario-1768561439435&lang=fr",
+    "context": "vendeur en pharmacie conseillant sur la mélatonine",
+    "gameDescription": "Vous incarnez un vendeur en pharmacie. Un client entre avec des problèmes de sommeil et cherche une solution. Votre mission : le conseiller sur la mélatonine et le convaincre d'acheter."
+  }
+}

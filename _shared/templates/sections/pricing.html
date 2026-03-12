@@ -1,0 +1,32 @@
+<!-- Pricing Section -->
+<section class="bg-white dark:bg-background-dark py-16 sm:py-24 border-t border-gray-100 dark:border-gray-800">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+            <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Tarifs</p>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Des prix adaptés à votre structure</h2>
+        </div>
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-gradient-to-br from-primary/5 to-blue-50 dark:from-primary/10 dark:to-gray-800 p-8 sm:p-12 rounded-3xl border-2 border-primary/20 text-center">
+                <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <span class="material-symbols-outlined" style="font-size: 20px;">{{pricing.icon}}</span>
+                    {{pricing.badge}}
+                </div>
+                <h3 class="text-3xl sm:text-4xl font-black mb-4">À partir de {{pricing.price}}<span class="text-xl font-normal text-gray-600 dark:text-gray-400">/{{pricing.period}}</span></h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+                    Pour {{pricing.condition}}
+                </p>
+                <ul class="text-left space-y-3 mb-8 max-w-md mx-auto">
+                    {{#each pricing.features}}
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary flex-shrink-0 mt-0.5">check_circle</span>
+                        <span class="text-gray-700 dark:text-gray-300">{{this}}</span>
+                    </li>
+                    {{/each}}
+                </ul>
+                <a href="#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg shadow-primary/20 transition-all hover:scale-105">
+                    Demander un devis personnalisé
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,197 @@
+{
+  "id": "retail-luxe",
+  "domain": "metagora-tech.fr/retail-luxe",
+  "branding": {
+    "name": "Metagora",
+    "tagline": "L'entraînement retail qui ressemble à la vraie vente",
+    "primaryColor": "#1a1a1a"
+  },
+  "hero": {
+    "title": "L'entraînement retail qui ressemble à la vraie vente.",
+    "subtitle": "Des clients virtuels IA pour améliorer l'écoute, la posture et la performance.",
+    "objectionKillers": "Aucun matériel • Sessions < 5 min • Déploiement rapide sur tout le réseau",
+    "ctaText": "Découvrez un client virtuel en action",
+    "ctaLink": "test.html",
+    "microCopy": "Démo personnalisée · 30 min · Sans engagement",
+    "image": "assets/images/hero-luxe.jpg"
+  },
+  "trust": {
+    "title": "Déjà adopté par des acteurs majeurs du retail et du luxe",
+    "items": [
+      { "name": "LVMH", "logo": "assets/images/logo-lvmh.svg" },
+      { "name": "Amazon", "logo": "assets/images/logo-amazon.svg" },
+      { "name": "Carrefour", "logo": "assets/images/logo-carrefour.svg" }
+    ]
+  },
+  "problem": {
+    "title": "La formation retail classique ne suit plus la réalité du terrain.",
+    "intro": "Former des équipes retail performantes est devenu un défi structurel :",
+    "items": [
+      "Un nouveau conseiller met 6 à 12 mois à être pleinement productif",
+      "70 % des formations sont oubliées en moins d'une semaine sans pratique",
+      "Les managers manquent de temps pour coacher efficacement",
+      "L'excellence se dilue d'une boutique à l'autre"
+    ],
+    "conclusion": "Résultat : une expérience client inégale et une performance commerciale sous-optimisée."
+  },
+  "solution": {
+    "title": "Metagora transforme la formation en entraînement réel.",
+    "description": "Metagora permet aux équipes retail de s'entraîner comme en boutique, grâce à des clients virtuels intelligents et adaptatifs, sans risque pour l'image de marque."
+  },
+  "howItWorks": {
+    "title": "Comment ça fonctionne ?",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Définissez vos scénarios boutique",
+        "description": "Méthodes de vente, cérémonial, profils clients, objections, nouveautés produit."
+      },
+      {
+        "number": "2",
+        "title": "Entraînez-vous avec un client virtuel",
+        "description": "Des conversations réalistes, adaptées au comportement du conseiller."
+      },
+      {
+        "number": "3",
+        "title": "Recevez un feedback immédiat",
+        "description": "Scoring précis : écoute active, découverte, objection, closing, posture."
+      },
+      {
+        "number": "4",
+        "title": "Pilotez la progression",
+        "description": "Vision claire par individu, boutique ou réseau."
+      }
+    ]
+  },
+  "roi": {
+    "title": "Des résultats mesurables, directement sur la performance terrain",
+    "subtitle": "Chaque session d'entraînement génère des données exploitables pour piloter la montée en compétence et la performance commerciale.",
+    "before": [
+      "Onboarding long et hétérogène",
+      "Formation peu mesurable",
+      "Coaching dépendant des managers"
+    ],
+    "after": [
+      "Onboarding accéléré et standardisé",
+      "Progression mesurée à chaque session",
+      "Coaching continu, 24/7, à grande échelle"
+    ],
+    "metrics": [
+      { "value": "+30%", "label": "de taux de closing" },
+      { "value": "+50%", "label": "d'engagement" },
+      { "value": "<5 min", "label": "par session" }
+    ]
+  },
+  "audience": {
+    "title": "Conçu pour les organisations retail exigeantes",
+    "items": [
+      {
+        "icon": "store",
+        "title": "Directeurs Retail / Réseau",
+        "description": "Standardiser l'excellence sur l'ensemble du réseau"
+      },
+      {
+        "icon": "school",
+        "title": "RH / L&D",
+        "description": "Industrialiser le coaching et prouver l'impact"
+      },
+      {
+        "icon": "groups",
+        "title": "Store Managers",
+        "description": "Coacher efficacement sans y passer des heures"
+      }
+    ]
+  },
+  "timeToValue": {
+    "title": "Des résultats visibles rapidement",
+    "subtitle": "Metagora s'intègre facilement dans l'organisation retail, sans perturber l'activité en boutique.",
+    "items": [
+      { "icon": "rocket_launch", "text": "Pilote en quelques semaines" },
+      { "icon": "speed", "text": "Déploiement réseau en moins de 30 jours" },
+      { "icon": "devices", "text": "Mobile, tablette et ordinateur" }
+    ],
+    "highlight": "Vous n'engagez pas un projet IT lourd. Vous activez un levier opérationnel immédiat."
+  },
+  "pilot": {
+    "title": "Testez Metagora sans risque pour votre marque",
+    "subtitle": "Avant un déploiement global, testez Metagora sur un périmètre maîtrisé.",
+    "items": [
+      "Pilote par boutique / région",
+      "Scénarios validés avec vos équipes",
+      "Aucune exposition client réel",
+      "Décision basée sur des données réelles"
+    ],
+    "closing": "Vous avancez par preuve, pas par promesse."
+  },
+  "features": {
+    "title": "Pourquoi choisir Metagora pour vos boutiques ?",
+    "subtitle": "Une formation premium pour un service d'exception.",
+    "items": [
+      {
+        "icon": "diamond",
+        "title": "Clients virtuels exigeants",
+        "description": "Des profils de clients haut de gamme avec des attentes précises : connaissance produit, storytelling de marque, service personnalisé."
+      },
+      {
+        "icon": "workspace_premium",
+        "title": "Argumentaires luxe authentiques",
+        "description": "Apprenez à valoriser le savoir-faire artisanal, l'héritage de la maison, les matériaux nobles et l'exclusivité des collections."
+      },
+      {
+        "icon": "psychology",
+        "title": "Techniques de vente premium",
+        "description": "Maîtrisez l'écoute active, la découverte des besoins implicites, le cross-selling subtil et le closing élégant."
+      }
+    ]
+  },
+  "video": {
+    "title": "Découvrez Metagora en action",
+    "subtitle": "Observez une simulation de vente avec un client exigeant.",
+    "url": "https://www.youtube.com/embed/rq-julCOC5A?rel=0&showinfo=0"
+  },
+  "solutions": {
+    "title": "Une solution pensée pour le retail de luxe",
+    "subtitle": "Former, perfectionner, exceller.",
+    "items": [
+      {
+        "image": "assets/images/solution-1.jpg",
+        "title": "Catalogue produits illimité",
+        "description": "Intégrez tous vos modèles, leurs caractéristiques techniques, leur histoire et leur positionnement. Mettez à jour en temps réel."
+      },
+      {
+        "image": "assets/images/solution-2.jpg",
+        "title": "Multilingue natif",
+        "description": "Formez vos équipes dans plus de 90 langues pour accueillir une clientèle internationale avec excellence."
+      },
+      {
+        "image": "assets/images/solution-3.jpg",
+        "title": "ROI mesurable",
+        "description": "Augmentation du panier moyen, réduction du taux d'abandon, amélioration de la satisfaction client. Résultats visibles dès le premier mois."
+      }
+    ]
+  },
+  "pricing": {
+    "icon": "storefront",
+    "badge": "Offre Boutique Luxe",
+    "price": "350€",
+    "period": "mois",
+    "condition": "une boutique de maroquinerie de luxe",
+    "features": [
+      "Scénarios maroquinerie premium",
+      "Clients virtuels haute exigence",
+      "Catalogue produits personnalisé",
+      "Formation continue des équipes",
+      "Support dédié 7j/7"
+    ]
+  },
+  "partners": true,
+  "contact": {
+    "title": "Découvrez comment Metagora s'adapte à votre réseau retail",
+    "subtitle": "Démo personnalisée · Sans engagement · Déploiement rapide"
+  },
+  "simulation": {
+    "url": "https://metaverse.ww.fo/avatarworld/?scenario=scenario-1769190918490&lang=fr",
+    "context": "conseiller de vente en boutique retail",
+    "gameDescription": "Vous incarnez un conseiller de vente dans une boutique retail. Un client entre à la recherche d'un produit. Votre mission : comprendre ses besoins, présenter les collections avec expertise et conclure la vente avec élégance."
+  }
+}

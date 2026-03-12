@@ -1,0 +1,21 @@
+{
+  "name": "landing-generator",
+  "version": "1.0.0",
+  "description": "Générateur de landing pages scalable pour Metagora",
+  "main": "generate-landing.js",
+  "scripts": {
+    "create": "node generate-landing.js",
+    "build": "node generate-landing.js",
+    "build-all": "node generate-landing.js --all",
+    "deploy": "node deploy-hostinger.js",
+    "deploy-all": "node deploy-hostinger.js --all"
+  },
+  "keywords": ["landing", "generator", "template"],
+  "author": "Metagora",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "ftp": "^0.3.10",
+    "chalk": "^4.1.2"
+  }
+}

@@ -1,0 +1,50 @@
+<!-- ROI Section -->
+<section class="py-16 sm:py-24 bg-[#f5f5f7] dark:bg-gray-900/50">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+            <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Résultats</p>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">{{roi.title}}</h2>
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">{{roi.subtitle}}</p>
+        </div>
+        
+        <!-- Comparison Table -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <h3 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400">Avant Metagora</h3>
+                <ul class="space-y-3">
+                    {{#each roi.before}}
+                    <li class="flex items-center gap-3 text-gray-600 dark:text-gray-400">
+                        <span class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 text-gray-400">
+                            <span class="material-symbols-outlined text-sm">remove</span>
+                        </span>
+                        {{this}}
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="bg-primary/5 dark:bg-primary/10 p-6 rounded-2xl border-2 border-primary">
+                <h3 class="text-lg font-bold mb-4 text-primary">Avec Metagora</h3>
+                <ul class="space-y-3">
+                    {{#each roi.after}}
+                    <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                        <span class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-primary text-white">
+                            <span class="material-symbols-outlined text-sm">check</span>
+                        </span>
+                        {{this}}
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Key Metrics -->
+        <div class="flex flex-wrap justify-center gap-6 sm:gap-10">
+            {{#each roi.metrics}}
+            <div class="text-center">
+                <div class="text-3xl sm:text-4xl font-black text-primary mb-1">{{this.value}}</div>
+                <div class="text-sm text-gray-600 dark:text-gray-400">{{this.label}}</div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

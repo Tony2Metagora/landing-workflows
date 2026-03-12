@@ -1,0 +1,25 @@
+<!-- Time to Value Section -->
+<section class="py-16 sm:py-24 bg-[#f5f5f7] dark:bg-gray-900/50">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+            <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Déploiement</p>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">{{timeToValue.title}}</h2>
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">{{timeToValue.subtitle}}</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 sm:gap-8 mb-10">
+            {{#each timeToValue.items}}
+            <div class="flex items-center gap-3 bg-white dark:bg-gray-800 px-5 py-3 rounded-full border border-gray-100 dark:border-gray-700 shadow-sm">
+                <span class="material-symbols-outlined text-primary">{{this.icon}}</span>
+                <span class="font-medium text-gray-700 dark:text-gray-300">{{this.text}}</span>
+            </div>
+            {{/each}}
+        </div>
+        {{#if timeToValue.highlight}}
+        <div class="max-w-2xl mx-auto text-center">
+            <p class="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-800 p-6 rounded-2xl border-2 border-primary/20">
+                {{timeToValue.highlight}}
+            </p>
+        </div>
+        {{/if}}
+    </div>
+</section>

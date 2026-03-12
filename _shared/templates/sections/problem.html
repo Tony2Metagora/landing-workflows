@@ -1,0 +1,24 @@
+<!-- Problem Section -->
+<section class="py-16 sm:py-24 bg-white dark:bg-background-dark">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">{{problem.title}}</h2>
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-10">{{problem.intro}}</p>
+        </div>
+        <div class="max-w-3xl mx-auto">
+            <ul class="space-y-4">
+                {{#each problem.items}}
+                <li class="flex items-start gap-4 p-4 bg-red-50 dark:bg-red-900/10 rounded-xl border border-red-100 dark:border-red-900/20">
+                    <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400">
+                        <span class="material-symbols-outlined text-lg">close</span>
+                    </span>
+                    <span class="text-gray-700 dark:text-gray-300">{{this}}</span>
+                </li>
+                {{/each}}
+            </ul>
+            {{#if problem.conclusion}}
+            <p class="mt-8 text-center text-gray-600 dark:text-gray-400 font-medium italic">{{problem.conclusion}}</p>
+            {{/if}}
+        </div>
+    </div>
+</section>

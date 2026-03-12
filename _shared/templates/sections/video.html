@@ -1,0 +1,12 @@
+<!-- Demo Video Section -->
+<section class="bg-white dark:bg-background-dark py-16 sm:py-24">
+    <div class="max-w-[1000px] mx-auto px-4 sm:px-6 text-center">
+        <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Démonstration</p>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-8 tracking-tight">{{video.title}}</h2>
+        <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-8 sm:mb-12">{{video.subtitle}}</p>
+        <div class="relative w-full aspect-video rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-gray-100 dark:border-gray-800 bg-black">
+            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="absolute top-0 left-0 w-full h-full" frameborder="0" src="{{video.url}}" title="Démonstration {{branding.name}}">
+            </iframe>
+        </div>
+    </div>
+</section>

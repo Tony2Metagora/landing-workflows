@@ -1,0 +1,86 @@
+{
+  "id": "nom-du-projet",
+  "domain": "metagora-tech.fr/nom-du-projet",
+  "branding": {
+    "name": "Nom de la marque",
+    "tagline": "Votre tagline ici",
+    "primaryColor": "#137fec"
+  },
+  "hero": {
+    "title": "Titre principal accrocheur",
+    "subtitle": "Sous-titre explicatif qui décrit la valeur ajoutée",
+    "ctaText": "Texte du bouton",
+    "ctaLink": "test.html",
+    "image": "assets/images/hero.jpg"
+  },
+  "features": {
+    "title": "Titre de la section fonctionnalités",
+    "subtitle": "Sous-titre de la section",
+    "items": [
+      {
+        "icon": "schedule",
+        "title": "Titre fonctionnalité 1",
+        "description": "Description de la fonctionnalité 1"
+      },
+      {
+        "icon": "trending_up",
+        "title": "Titre fonctionnalité 2",
+        "description": "Description de la fonctionnalité 2"
+      },
+      {
+        "icon": "hub",
+        "title": "Titre fonctionnalité 3",
+        "description": "Description de la fonctionnalité 3"
+      }
+    ]
+  },
+  "video": {
+    "title": "Titre de la section vidéo",
+    "subtitle": "Sous-titre de la vidéo",
+    "url": "https://www.youtube.com/embed/rq-julCOC5A?rel=0&showinfo=0"
+  },
+  "solutions": {
+    "title": "Titre de la section solutions",
+    "subtitle": "Sous-titre de la section",
+    "items": [
+      {
+        "image": "assets/images/solution-1.jpg",
+        "title": "Solution 1",
+        "description": "Description de la solution 1"
+      },
+      {
+        "image": "assets/images/solution-2.jpg",
+        "title": "Solution 2",
+        "description": "Description de la solution 2"
+      },
+      {
+        "image": "assets/images/solution-3.jpg",
+        "title": "Solution 3",
+        "description": "Description de la solution 3"
+      }
+    ]
+  },
+  "pricing": {
+    "icon": "storefront",
+    "badge": "Nom de l'offre",
+    "price": "XXX€",
+    "period": "mois",
+    "condition": "condition d'éligibilité",
+    "features": [
+      "Avantage 1",
+      "Avantage 2",
+      "Avantage 3",
+      "Avantage 4"
+    ]
+  },
+  "partners": true,
+  "contact": {
+    "title": "Titre de la section contact",
+    "subtitle": "Sous-titre de la section contact"
+  },
+  "simulation": {
+    "url": "https://metaverse.ww.fo/avatarworld/?scenario=scenario-XXX&lang=fr",
+    "context": "contexte de la simulation",
+    "gameDescription": "Description complète du jeu de simulation"
+  }
+}

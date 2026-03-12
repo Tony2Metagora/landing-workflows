@@ -1,0 +1,219 @@
+### 1. Modifs générales à faire sur la landing “template”
+
+1. **Bloc chiffres (comme ton screenshot)**
+   - Garder les 3 KPIs :  
+     - `+30% de taux de closing`  
+     - `+50% d'engagement formation`  
+     - `<5 min par session`  
+   - Mais prévoir que chacun puisse être adapté selon la persona (RH / Sales / Learning) et le secteur.
+
+2. **Hero / accroche**
+   - Phrase générique mais “sectorisable” :  
+     - `MetaGora transforme la formation en entraînement réel.`  
+   - Rendre la phrase paramétrable pour le secteur:  
+     - `vos équipes retail luxe`, `vos conseillers immobiliers`, `vos sommeliers`, `vos équipes en boutique`, etc.
+
+3. **Bandeau “Adopté par…”**
+   - Mettre le texte plus en avant :  
+     - `Adopté par des acteurs majeurs du retail et du luxe`
+   - Faire ressortir davantage les logos (taille + contraste).
+   - Ajouter zone pour afficher soit:
+     - logos génériques (LVMH, Amazon, Carrefour, etc.)
+     - soit logos spécifiques à la marque ciblée.
+
+4. **CTA / Call-to-action**
+   - Multiplier les boutons `Découvrir MetaGora en action` ou `Découvrir la simulation` :
+     - dans le hero
+     - sous le bloc chiffres
+     - après 1–2 sections d’argumentaire
+   - Certains CTA renvoient en bas de page vers le formulaire.
+
+5. **Section “Comment ça fonctionne”**
+   - Titre paramétrable :  
+     - `Comment ça fonctionne pour [Nom de la marque] ?`  
+     - ou `Comment ça fonctionnerait pour [Nom de la marque] ?`
+   - Prévoir variantes de texte par secteur (luxe, immobilier, hôtellerie, restauration, vins, etc.).
+
+6. **Texte “formation classique vs MetaGora”**
+   - Prévoir remplacement du mot `retail` par secteur :  
+     - `équipes retail`, `équipes en magasin`, `équipes commerciales`, `vos conseillers`, etc.
+   - Adapter vocabulaire : `conseillers / vendeurs / beauty advisors / serveurs / sommeliers / agents immobiliers`.
+
+7. **Citation client**
+   - Ajouter vraie citation client + guillemets fermants.
+   - Prévoir champ dynamique pour auteur / fonction / marque.
+
+8. **Bloc “Solution pensée pour le retail luxe”**
+   - Transformer en bloc paramétrable :  
+     - `Solution pensée pour le retail luxe`  
+     - `Solution pensée pour les acteurs de l’immobilier`  
+     - `Solution pensée pour les maisons de vins & spiritueux`…
+   - Idem pour `Nous supportons des organisations retail exigeantes` → texte générique mais sectorisable.
+
+9. **Argumentaires & puces**
+   - Adapter les mots-clés selon secteur :  
+     - `cérémonial de vente` → luxe / beauté  
+     - `parcours client en boutique` → retail  
+     - `argumentaire immobilier` → immo  
+     - `expérience en salle` → restauration/hôtellerie, etc.
+   - Ajouter une puce “argumentaire [secteur]” dans les bénéfices.
+
+10. **Pricing**
+    - Prévoir bloc prix où:
+      - wording peut changer selon segment (`boutique luxe`, `point de vente`, `restaurant`, etc.)
+      - petit texte personnalisable pour refléter la taille / volume.
+
+11. **Logos partenaires techniques**
+    - Ajouter bandeau “Propulsé par le leader de l’IA” avec logos techniques (OpenAI / etc. selon ce que vous utilisez).
+
+12. **Formulaire de contact**
+    - Formulaire classique en bas (nom, email, entreprise, rôle…).
+    - Option : au clic sur la grande image/simulation → scroll vers le formulaire ou pop-up formulaire léger.
+
+13. **Bloc simulation vs vidéo**
+    - Prévoir deux versions testables :
+      - A : vidéo démo simple
+      - B : simulation interactive MetaGora intégrée.
+
+---
+
+### 2. Éléments à personnaliser automatiquement par landing
+
+#### A. Par **marque / entreprise**
+
+Pour chaque landing générée :
+
+1. **Nom de la marque**
+   - Dans le titre “Comment ça fonctionne pour [Marque] ?”
+   - Dans les sous-titres :  
+     - `Tester MetaGora sans risque pour [Marque]`
+     - `Permettez à vos équipes [secteur] de s’entraîner comme en boutique [Marque]`.
+   - Dans la citation / encadré de preuve sociale (si disponible).
+
+2. **Secteur / verticale**
+   - Luxe, beauté, sport, vins, immobilier, hôtellerie, restauration, etc.
+   - Remplacer `retail` partout par le bon secteur:
+     - `équipes retail` → `équipes retail luxe`, `équipes parfumerie`, `équipes de salle`, `équipes d'agents immobiliers`, etc.
+   - Adapter les exemples de “clients virtuels” :  
+     - `profil client haut de gamme`, `client sportswear`, `client investisseur immobilier`, etc.
+
+3. **Taille / niveau de la marque**
+   - Exemple : nombre de boutiques par pays (UK, US, France…).
+   - Utiliser ces infos dans le bloc estimateur de CA / d’impact:
+     - `Avec vos 23 boutiques au UK, MetaGora peut générer +8% de performance, soit environ X de CA supplémentaire.`
+   - Ajuster éventuellement le pricing (“par boutique”, “par magasin”, “par restaurant”).
+
+4. **Logos de la marque**
+   - Afficher le logo de la marque cible dans :
+     - bloc “Pourquoi pas + logo [marque]”
+     - header ou bandeau de personnalisation.
+
+5. **Argumentaires spécifiques**
+   - Choix de quelques puces spécifiques:  
+     - `cérémonial de vente`, `mise en avant des nouveautés`, `gestion des objections prix`, etc., en fonction de la marque / catégorie.
+
+---
+
+#### B. Par **persona** (profil du destinataire du mail)
+
+Personas identifiés :  
+- **Sales / Directeur commercial / Retail Director**  
+- **RH / People / Talent**  
+- **Learning / Académie / Formation**
+
+Pour chaque persona, personnaliser :
+
+1. **Angle des bénéfices (les 3 chiffres du bloc KPIs)**
+   - **Sales** :  
+     - `+30% de taux de closing`  
+     - `+X% de panier moyen` (si dispo)  
+     - `<5 min par session` (formation courte, orientée performance).
+   - **Learning** :  
+     - `+50% d'engagement formation`  
+     - `+X% de complétion des parcours`  
+     - `déploiement en 4 jours`.
+   - **RH** :  
+     - `Réduction du temps de formation`  
+     - `% d’employés formés en moins de X semaines`  
+     - `standardisation de la qualité de service`.
+
+2. **Texte d’intro / pitch**
+   - Adapter la promesse:
+     - Sales : accent sur CA, closing, upsell.
+     - RH : attractivité, onboarding plus rapide, standardisation.
+     - Learning : modernisation de la formation, engagement, analytics.
+
+3. **Sections “enjeux / problèmes”**
+   - Variante par persona (mêmes problèmes mais formulés différemment):
+     - Sales : objectifs de vente, cohérence du discours.
+     - RH : turnover, montée en compétences, marque employeur.
+     - Learning : manque de temps, contenus peu utilisés.
+
+4. **Vocabulaires de rôle**
+   - `Directeur retail`, `DRH`, `Responsable formation`, etc. en fonction de qui reçoit l’email.
+   - Adapter `conseillers / vendeurs / équipes` en fonction du vocabulaire habituel du secteur et de la persona.
+
+5. **CTA wording**
+   - Légère variation:
+     - Sales : `Voir l’impact sur vos ventes`
+     - RH : `Découvrir l’impact sur vos équipes`
+     - Learning : `Découvrir la nouvelle expérience de formation`.
+
+---
+
+#### C. Par **combinaison marque × persona**
+
+À personnaliser à l’intersection des deux :
+
+1. **Headline personnalisée**
+   - `MetaGora pour les équipes retail luxe de [Marque]`
+   - `MetaGora pour accompagner les nouvelles recrues [Marque]` (RH)
+   - `MetaGora pour vos parcours de formation [Marque]` (Learning).
+
+2. **Mini-estimateur d’impact**
+   - Utiliser la taille (nb de boutiques) + pôle du destinataire :
+     - Sales : projection CA / closing par boutique.
+     - Learning : nombre de sessions / taux d’engagement.
+     - RH : temps de formation économisé, nombre de collaborateurs touchés.
+
+3. **Section “Tester MetaGora sans risque pour [Marque]”**
+   - Texte légèrement différent si la cible est RH, Sales ou Learning (mise en avant de ce qu’ils récupèrent comme résultats).
+
+---
+
+### 3. Éléments liés au tracking & capture de leads
+
+1. **Pop-up pseudo / prénom avant simulation**
+   - Avant d’entrer dans la simulation : demander `Prénom` ou `pseudo` (champ obligatoire léger).
+   - Enregistrer ce prénom + ID simulation → recroiser avec email si vous l’avez déjà dans vos fichiers.
+
+2. **Formulaire complet en bas de page**
+   - Garder email, rôle, pays, etc. → pour les prospects qui vont jusqu’au bout.
+
+3. **Paramètres UTM / liens par persona & marque**
+   - Générer un lien unique par campagne (au minimum par persona × marque × pays) pour suivre les clics même si la personne ne remplit pas le formulaire.
+
+---
+
+### 4. To‑do opérationnelle (très synthétique)
+
+1. Transformer la landing actuelle en **template paramétrable** (secteur, marque, persona, taille).
+2. Implémenter :
+   - blocs dynamiques (texte, logos, KPIs, titres, pricing),
+   - variantes de wording par persona & secteur.
+3. Ajouter :
+   - plus de CTA dispersés,
+   - section citation client,
+   - logos partenaires techniques.
+4. Intégrer :
+   - version A (vidéo) / version B (simulation) pour A/B test,
+   - pop-up prénom/pseudo avant simulation.
+5. Préparer les **datasets** par marque :
+   - nb de boutiques par pays,
+   - secteur,
+   - listes de contacts par persona,
+   - logo & éventuels témoignages.
+6. Utiliser le fichier Excel d’Yves pour :
+   - choisir marques prioritaires (ex: Sephora, Hermès),
+   - générer les premières landings personnalisées,
+   - lier chaque contact à son URL personnalisée.

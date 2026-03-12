@@ -1,0 +1,39 @@
+<!-- CTA & Form Section -->
+<section id="contact" class="py-16 sm:py-24 bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+            <div class="flex-1 text-center lg:text-left">
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-black mb-4 sm:mb-6 leading-tight">{{contact.title}}</h2>
+                <p class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-6 sm:mb-8">
+                    {{contact.subtitle}}
+                </p>
+            </div>
+            <div class="flex-1 w-full max-w-md">
+                <div class="bg-[#f5f5f7] dark:bg-gray-800 p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Inscription</h3>
+                    <form id="contact-form" action="https://formspree.io/f/xdaznpln" method="POST" class="space-y-3 sm:space-y-4">
+                        <input type="hidden" name="landing_url" id="landing-url-field" value="" />
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2 px-1">Nom complet</label>
+                            <input name="name" required class="w-full h-12 sm:h-14 px-4 rounded-xl border-none bg-white dark:bg-gray-900 focus:ring-2 focus:ring-primary transition-all placeholder:text-gray-400 text-sm sm:text-base" placeholder="Jean Dupont" type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2 px-1">Email professionnel</label>
+                            <input name="email" required class="w-full h-12 sm:h-14 px-4 rounded-xl border-none bg-white dark:bg-gray-900 focus:ring-2 focus:ring-primary transition-all placeholder:text-gray-400 text-sm sm:text-base" placeholder="jean.dupont@exemple.fr" type="email"/>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2 px-1">Entreprise</label>
+                            <input name="company" class="w-full h-12 sm:h-14 px-4 rounded-xl border-none bg-white dark:bg-gray-900 focus:ring-2 focus:ring-primary transition-all placeholder:text-gray-400 text-sm sm:text-base" placeholder="Nom de votre entreprise" type="text"/>
+                        </div>
+                        <button class="w-full h-12 sm:h-14 bg-primary hover:bg-primary/90 text-white rounded-xl font-bold text-base sm:text-lg transition-all shadow-lg shadow-primary/20 hover:scale-105 active:scale-95" type="submit">
+                            Demander une démo
+                        </button>
+                    </form>
+                    <script>
+                        document.getElementById('landing-url-field').value = window.location.href;
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

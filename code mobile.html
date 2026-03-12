@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Virtual Retailer - L'assistant de vente du futur</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d141b] dark:text-slate-50 transition-colors duration-200">
+<header class="sticky top-0 z-50 w-full border-b border-[#e7edf3] dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-4 py-3 lg:px-40">
+<div class="mx-auto flex max-w-[960px] items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<svg class="size-7" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+</svg>
+</div>
+<h1 class="text-lg font-bold tracking-tight">Virtual Retailer</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="hidden sm:flex min-w-[84px] items-center justify-center rounded-lg bg-primary h-9 px-4 text-white text-sm font-bold">
+                Demo
+            </button>
+<button class="flex items-center justify-center rounded-lg bg-[#e7edf3] dark:bg-slate-800 h-9 w-9 text-[#0d141b] dark:text-white">
+<span class="material-symbols-outlined" style="font-size: 20px;">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col items-center w-full">
+<section class="w-full max-w-[960px] px-4 py-12 lg:py-24">
+<div class="flex flex-col items-center text-center gap-8 lg:gap-12">
+<div class="flex flex-col gap-4 max-w-[700px]">
+<h1 class="text-[#0d141b] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl">
+                    L'assistant de vente virtuel du futur.
+                </h1>
+<p class="text-[#4c739a] dark:text-slate-400 text-lg lg:text-xl font-normal leading-relaxed">
+                    Optimisez vos interactions clients grâce à l'intelligence artificielle générative conçue pour le commerce de détail.
+                </p>
+</div>
+<div class="w-full max-w-[800px] aspect-[16/9] bg-center bg-no-repeat bg-cover rounded-xl shadow-2xl border border-slate-200 dark:border-slate-800 relative group cursor-pointer overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCA25pDT0kS8xFeX2qw6dJx3XoBsaRH6nyGrv3DkGiI5i1dpgw710BI6ETJSOvJBJ5nfo_In8L7eJxBhj7RFQu023Axnu1FMQOUdzccx0jL-SRdrsauSiVJJrAl0OQ8RJjY_aERFKpxcMOu_BZTEzYlXVP3yaqNTPgeSMat9l4s-Ewgy58g7WJz35u5GPYKzLaz2Gw1VMkSsIFu6yqupqEfiZHf4i3aY6XpixjTjbTR3XMDfjB724MZV8faMHRMvL6V2x5Jxw5UaEI");'>
+<div class="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/20">
+<div class="w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white shadow-2xl transition-transform group-hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined !text-4xl sm:!text-5xl ml-1">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+                    Tester maintenant
+                </button>
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-[#e7edf3] dark:bg-slate-800 text-[#0d141b] dark:text-white text-lg font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+                    En savoir plus
+                </button>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[960px] px-4 py-16">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col gap-3 text-center sm:text-left">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest">Fonctionnalités</h2>
+<h3 class="text-[#0d141b] dark:text-white text-3xl font-bold leading-tight @[480px]:text-4xl">Advanced Retail Solutions</h3>
+<p class="text-[#4c739a] dark:text-slate-400 text-base max-w-[600px]">Une suite d'outils puissants pour transformer votre point de vente physique en expérience digitale connectée.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-5 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-xl">
+<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoMyCY-yAh5EnORLytZNMHmvmIQJBQFDIC2aX80ByYLoS_fdwM0DesEYI8kTrJHUSgGsPZWJkgNF_NcI-NejUiaFNIwO55HH7qKxDEyOJBxYq2JijTnagmVVzoh8CSHcm_cQ2yD5XeVCby0zrOWip431dNXlQj91Ppm-eRwZe2j1ncMj1UrU6NbE5fBYD0jeLk4Mhvma_HaFeZ6LtfPRKk_h0TtTG8uiKfa9dcnNGLVlzxAX48Pj0D15HmRQvcswWHkgPOxOLorp8");'></div>
+<div>
+<h4 class="text-[#0d141b] dark:text-white text-xl font-bold mb-2">Real-time Inventory Sync</h4>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm leading-relaxed">Synchronisez instantanément vos stocks physiques et digitaux pour ne jamais rater une vente.</p>
+</div>
+</div>
+<div class="flex flex-col gap-5 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-xl">
+<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn2zsTZrnmYcfUGTeXMGnHfI8tQu9LmAA_f6ik_PaIM4bAAkTL4GiFabe4ZQ_SBnNjTTzvo5UcQiBLpPxta2qmdQEu-aGoYFskFA4aeKsSVI4GrpTOiwz-kZe6zHoVVYFzSVC-tLM5agVK3DyFxwCVWlW9EPJdhvFiCTXzfS3HtxpMGV9NxbaeAv4ql_DwEwQ_EAbGQQypwShGSa-RyEs2YmBelwjBRAVH_FAlDQU-_gj6KaMMgw-xRrgaI6L1pgMnV8ZC8hBKrJI");'></div>
+<div>
+<h4 class="text-[#0d141b] dark:text-white text-xl font-bold mb-2">AI Recommendations</h4>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm leading-relaxed">Proposez des suggestions personnalisées ultra-pertinentes basées sur l'historique et le comportement.</p>
+</div>
+</div>
+<div class="flex flex-col gap-5 p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-xl">
+<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8dcI58h8HzR9MEtPcIQ-EXqGSG-QCitlGDytPL8CS7Fx5CRyFr9NXr3U_2R0PGXYk4e4CXhHh8qXz4_wdyPIgtas7Co57Q0mc6YfgVmHAWj6A1Cwhx5G0CgYRXtRR_urbJUTqTxLCDwRjWhiMGa8h5PDOLAqxTaIagiCXh46Qe2uqpDu1pIyX65qnXI__79iYXJxd2G60jcuB9lIIN93-GvIJ720nUnod_PyKHBW0khoDD-YkY8eY7gbalXaC6Goah4t-mmf6HDs");'></div>
+<div>
+<h4 class="text-[#0d141b] dark:text-white text-xl font-bold mb-2">Seamless POS Integration</h4>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm leading-relaxed">S'intègre directement avec vos systèmes de caisse existants sans friction technique.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[960px] px-4 py-16">
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-3 text-center">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest text-center">Démonstration</h2>
+<h3 class="text-[#0d141b] dark:text-white text-3xl font-bold leading-tight @[480px]:text-4xl">Voyez-le en action</h3>
+<p class="text-[#4c739a] dark:text-slate-400 text-base max-w-[600px] mx-auto">Découvrez comment notre assistant virtuel transforme l'interaction en magasin en quelques minutes.</p>
+</div>
+<div class="relative w-full overflow-hidden rounded-2xl shadow-2xl bg-black aspect-video border border-slate-200 dark:border-slate-800 group cursor-pointer">
+<div class="absolute inset-0 bg-center bg-cover" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuChCzqhG6XvOS-vxWt4TlWctxGvIPYqKKdlq1cU_TKpAW2IWKmaELq0C-P2X1Iesqf1VpwNjhrNv3XLhwMc3cm4f8hrEIQ0I0jGYevSnhKQceP5iNzVe1zqt-KvhM7LpxvbdyaIOB9Lp6rCjjlVkJFSbyZHNUfgC1hCP-QLxzxoj91bKKV63S_M6Po_BWi8yLTxpZVFKo1Be6ORbjeY-bjAvBn6LZIZC4K4BrJP4hBfcKpeUz0wynRMNr00UpDmC4sT0zA-CWSNwL0');"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-all duration-300">
+<div class="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-xl border border-white/40 text-white shadow-2xl transition-all duration-300 group-hover:scale-105 group-active:scale-95">
+<span class="material-symbols-outlined !text-5xl sm:!text-6xl ml-1">play_arrow</span>
+</div>
+</div>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" class="w-full h-full opacity-0 pointer-events-none" frameborder="0" src="https://www.youtube.com/embed/kZiPX1XVn3E?controls=1" title="Virtual Retailer Demonstration">
+</iframe>
+</div>
+</div>
+</section>
+<section class="w-full bg-white dark:bg-slate-900 py-20 px-4 border-y border-slate-100 dark:border-slate-800">
+<div class="max-w-[800px] mx-auto text-center flex flex-col gap-10">
+<div class="flex flex-col gap-4">
+<h2 class="text-[#0d141b] dark:text-white text-4xl font-black tracking-tight">Rejoignez l'aventure</h2>
+<p class="text-[#4c739a] dark:text-slate-400 text-lg">Prêt à transformer votre commerce ? Laissez-nous vos coordonnées pour un essai gratuit de 14 jours.</p>
+</div>
+<form class="flex flex-col gap-4 w-full max-w-md mx-auto">
+<div class="flex flex-col gap-2">
+<input class="h-14 px-4 rounded-xl border-none bg-background-light dark:bg-slate-800 focus:ring-2 focus:ring-primary text-lg" placeholder="Nom complet" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<input class="h-14 px-4 rounded-xl border-none bg-background-light dark:bg-slate-800 focus:ring-2 focus:ring-primary text-lg" placeholder="Nom de l'entreprise" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex flex-col sm:flex-row gap-2">
+<input class="flex-1 h-14 px-4 rounded-xl border-none bg-background-light dark:bg-slate-800 focus:ring-2 focus:ring-primary text-lg" placeholder="Email professionnel" type="email"/>
+<button class="h-14 px-8 bg-primary text-white font-bold rounded-xl text-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all" type="submit">
+                            S'inscrire
+                        </button>
+</div>
+</div>
+<p class="text-xs text-[#4c739a] dark:text-slate-500 mt-2">
+                    En vous inscrivant, vous acceptez nos conditions d'utilisation et notre politique de confidentialité.
+                </p>
+</form>
+</div>
+</section>
+<footer class="w-full max-w-[960px] px-4 py-12 flex flex-col gap-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 opacity-50">
+<div class="size-6 text-[#0d141b] dark:text-white">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"></path>
+</svg>
+</div>
+<span class="font-bold">Virtual Retailer</span>
+</div>
+<div class="flex gap-8 text-sm font-medium text-[#4c739a] dark:text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Produit</a>
+<a class="hover:text-primary transition-colors" href="#">Tarifs</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+<a class="hover:text-primary transition-colors" href="#">Blog</a>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-[#4c739a] dark:text-slate-500">
+            © 2024 Virtual Retailer Inc. Tous droits réservés.
+        </div>
+</footer>
+</main>
+
+</body></html>

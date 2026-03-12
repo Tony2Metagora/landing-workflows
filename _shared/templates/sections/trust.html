@@ -1,0 +1,23 @@
+<!-- Trust Section -->
+<section class="bg-white dark:bg-background-dark py-16 sm:py-24 border-t border-gray-100 dark:border-gray-800">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12">
+            <p class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Références</p>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">{{trust.title}}</h2>
+            {{#if trust.subtitle}}
+            <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">{{trust.subtitle}}</p>
+            {{/if}}
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-8 max-w-5xl mx-auto">
+            {{#each trust.items}}
+            <div class="flex items-center justify-center p-5 sm:p-6 bg-[#f5f5f7] dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 w-[200px] h-[80px] flex-none">
+                {{#if this.logo}}
+                <img src="{{this.logo}}" alt="{{this.name}}" class="h-10 w-auto max-w-[160px] object-contain opacity-80" />
+                {{else}}
+                <div class="text-center text-sm sm:text-base font-bold text-gray-700 dark:text-gray-200">{{this.name}}</div>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
