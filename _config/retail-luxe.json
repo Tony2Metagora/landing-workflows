@@ -18,7 +18,7 @@
   "trust": {
     "title": "Déjà adopté par des acteurs majeurs du retail et du luxe",
     "items": [
-      { "name": "LVMH", "logo": "assets/images/logo-lvmh.svg" },
+      { "name": "LVMH", "logo": "assets/images/logo-lvmh.png" },
       { "name": "Amazon", "logo": "assets/images/logo-amazon.svg" },
       { "name": "Carrefour", "logo": "assets/images/logo-carrefour.svg" }
     ]
