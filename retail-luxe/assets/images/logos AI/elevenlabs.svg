@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40">
+  <rect x="8" y="4" width="7" height="32" rx="3.5" fill="#000"/>
+  <rect x="22" y="12" width="7" height="24" rx="3.5" fill="#000"/>
+  <text x="40" y="29" font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="22" font-weight="600" fill="#000" letter-spacing="-0.5">ElevenLabs</text>
+</svg>
