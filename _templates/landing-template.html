@@ -194,7 +194,7 @@
     .logos-section { padding: 48px 0; border-bottom: 1px solid var(--border); }
     .logos-label { text-align: center; font-size: 0.78rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; margin-bottom: 28px; }
     .logos-row { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
-    .logos-row img { height: 48px; width: auto; opacity: 0.6; transition: opacity 0.2s; object-fit: contain; }
+    .logos-row img { height: 48px; width: auto; opacity: 0.55; transition: opacity 0.2s; object-fit: contain; }
     .logos-row img:hover { opacity: 1; }
 
     /* FEATURE TABS */
@@ -335,9 +335,10 @@
 
     /* PARTNERS */
     .partners-row { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px; }
-    .partner-item { display: flex; align-items: center; justify-content: center; width: 200px; height: 80px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); transition: opacity 0.2s, box-shadow 0.2s; opacity: 0.75; }
+    .partner-item { display: flex; align-items: center; justify-content: center; width: 200px; height: 80px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); transition: opacity 0.2s, box-shadow 0.2s; opacity: 0.75; padding: 12px; }
     .partner-item:hover { opacity: 1; box-shadow: var(--shadow-md); }
     .partner-item img { height: 36px; width: auto; max-width: 160px; object-fit: contain; }
+
 
     /* CTA SECTION */
     .cta-section { background: linear-gradient(135deg, var(--bg-blue-pale) 0%, var(--bg-pink-pale) 100%); }
@@ -420,10 +421,9 @@
     <div class="container">
       <p class="logos-label">{{LOGOS_LABEL}}</p>
       <div class="logos-row">
-        <img src="{{ASSETS_PATH}}/logo-lvmh.png" alt="LVMH" style="filter: brightness(0) saturate(100%) opacity(0.6);">
+        <img src="{{ASSETS_PATH}}/logo-lvmh.svg" alt="LVMH" style="filter: brightness(0) saturate(100%) opacity(0.6);">
         <img src="{{ASSETS_PATH}}/logo-amazon.svg" alt="Amazon">
         <img src="{{ASSETS_PATH}}/logo-carrefour.svg" alt="Carrefour">
-          <img src="{{ASSETS_PATH}}/logo-makeupforever.svg" alt="Make Up For Ever">
       </div>
     </div>
   </section>
@@ -679,7 +679,7 @@
         <div class="partner-item"><img src="{{ASSETS_PATH}}/logos AI/microsoft.svg" alt="Microsoft"></div>
         <div class="partner-item"><img src="{{ASSETS_PATH}}/logos AI/nvidia.svg" alt="NVIDIA"></div>
         <div class="partner-item"><img src="{{ASSETS_PATH}}/logos AI/google-cloud.svg" alt="Google Cloud"></div>
-        <div class="partner-item"><img src="{{ASSETS_PATH}}/logos AI/elevenlabs.svg" alt="ElevenLabs"></div>
+        <div class="partner-item"><img src="{{ASSETS_PATH}}/logos AI/elevenlabs.jpg" alt="ElevenLabs"></div>
       </div>
     </div>
   </section>
