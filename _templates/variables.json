@@ -36,6 +36,7 @@
     "fr": {
       "code": "fr",
       "label": "Français",
+      "videoYoutubeId": "rq-julCOC5A",
       "nav": {
         "solution": "Solution",
         "process": "Processus",
@@ -225,6 +226,7 @@
     "en": {
       "code": "en",
       "label": "English",
+      "videoYoutubeId": "UfNSKT3IPCc",
       "nav": {
         "solution": "Solution",
         "process": "Process",
