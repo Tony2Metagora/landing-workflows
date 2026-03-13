@@ -227,7 +227,7 @@
     .benefit-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; color: var(--text-body); }
     .benefit-list .check { width: 20px; height: 20px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; flex-shrink: 0; margin-top: 2px; }
     .benefit-list .check::before { content: '✓'; }
-    @media (max-width: 900px) { .benefit-block, .benefit-block.reverse { grid-template-columns: 1fr; direction: ltr; } .benefit-visual { order: -1; } }
+    @media (max-width: 900px) { .benefit-block, .benefit-block.reverse { grid-template-columns: 1fr; direction: ltr; } .benefit-visual { order: -1; } .benefit-block.image-after .benefit-visual { order: 1; } }
 
     /* PROCESS STEPS */
     .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
@@ -285,7 +285,7 @@
     .kpi-number { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
     .kpi-label { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
     .boutique-hook { font-size: 1rem; color: var(--text-body); font-weight: 500; }
-    @media (max-width: 900px) { .boutique-block { grid-template-columns: 1fr; } .boutique-visual { order: -1; } }
+    @media (max-width: 900px) { .boutique-block { grid-template-columns: 1fr; } .boutique-visual { order: -1; width: 100%; min-height: 200px; aspect-ratio: 16/9; } .boutique-visual img { width: 100%; height: 100%; object-fit: cover; } }
 
     /* PILOT */
     .pilot-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin: 40px auto; max-width: 500px; text-align: left; }
@@ -546,7 +546,7 @@
 
   <section class="section bg-soft">
     <div class="container">
-      <div class="benefit-block fade-in">
+      <div class="benefit-block image-after fade-in">
         <div class="benefit-text">
           <span class="section-label">Déploiement</span>
           <h2 class="section-title">Des résultats visibles rapidement.</h2>
@@ -568,15 +568,15 @@
     <div class="container">
       <div class="text-center" style="margin-bottom: 48px;">
         <span class="section-label">Louis Vuitton Maison Champs-Élysées</span>
-        <h2 class="section-title">Et si on commençait avec votre boutique<br>au 101 avenue des Champs-Élysées, 75008 Paris, France ?</h2>
+        <h2 class="section-title">Et si on commençait avec votre boutique<br>au 101 avenue des Champs-Élysées, 75008 Paris ?</h2>
         <p class="section-subtitle mx-auto" style="text-align:center;">Amenez votre clientelling à l'excellence de votre clientèle</p>
       </div>
       <div class="boutique-block fade-in">
         <div class="boutique-visual">
-          <img src="../../assets/images/https://us.louisvuitton.com/images/is/image/lv/1/VE_DI3_L/louis-vuitton-find-a-store-fr-louis-vuitton-maison-champs-%C3%A9lys%C3%A9es--StFI_Louis_Vuitton_champselysee_2024_DI3.jpg?wid=1200&hei=630" alt="Louis Vuitton Maison Champs-Élysées">
+          <img src="../../assets/images/boutiques/Boutique Louis Vuitton fr.jpg" alt="Louis Vuitton Maison Champs-Élysées">
         </div>
         <div class="boutique-content">
-          <p class="boutique-address">101 avenue des Champs-Élysées, 75008 Paris, France</p>
+          <p class="boutique-address">101 avenue des Champs-Élysées, 75008 Paris</p>
           <div class="kpi-cards">
             <div class="kpi-card">
               <div class="kpi-number">+3 à +5 pts</div>
@@ -714,6 +714,7 @@
           </form>
           <script>
             document.getElementById('landing-url-field').value = window.location.href;
+            document.getElementById('form-source').value = window.location.href;
           </script>
         </div>
       </div>
@@ -739,12 +740,5 @@
     });
   </script>
 
-<script>
-  // Set form source to current page URL
-  (function() {
-    var sourceField = document.getElementById('form-source');
-    if (sourceField) sourceField.value = window.location.href;
-  })();
-</script>
 </body>
 </html>
