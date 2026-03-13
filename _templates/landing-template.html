@@ -695,6 +695,8 @@
         <div class="cta-form-card">
           <h3>{{FORM_TITLE}}</h3>
           <form id="contact-form" class="cta-form" action="https://formspree.io/f/xdaznpln" method="POST">
+<input type="hidden" name="_source" id="form-source" value="">
+<input type="hidden" name="_subject" value="Nouveau lead — {{BRAND_NAME}}">
             <input type="hidden" name="landing_url" id="landing-url-field" value="">
             <div>
               <label>{{FORM_NAME_LABEL}}</label>
@@ -736,5 +738,13 @@
       document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
     });
   </script>
+
+<script>
+  // Set form source to current page URL
+  (function() {
+    var sourceField = document.getElementById('form-source');
+    if (sourceField) sourceField.value = window.location.href;
+  })();
+</script>
 </body>
 </html>
