@@ -365,6 +365,30 @@
     .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
     .bg-soft { background: var(--bg-soft); }
+
+    /* ── MOBILE FONT SIZE OVERRIDES ── */
+    @media (max-width: 768px) {
+      .hero-meta { font-size: 0.88rem; font-weight: 500; }
+      .process-step h3 { font-size: 1.1rem; }
+      .process-step p { font-size: 0.92rem; }
+      .section-label { font-size: 0.85rem; }
+      .comparison-card h3 { font-size: 1.15rem; }
+      .comparison-list li { font-size: 0.95rem; }
+      .benefit-list li { font-size: 1rem; }
+      .boutique-address { font-size: 1rem; }
+      .kpi-label { font-size: 0.92rem; }
+      .kpi-number { font-size: 2rem; }
+      .boutique-hook { font-size: 1.05rem; }
+      .pilot-list li { font-size: 1.02rem; }
+      .pilot-tagline { font-size: 1.2rem; }
+      .pricing-price-sub { font-size: 0.92rem; line-height: 1.6; }
+      .section-title { font-size: clamp(1.7rem, 4vw, 2.4rem); }
+      .section-subtitle { font-size: 1.02rem; }
+      .solution-card h4 { font-size: 1rem; }
+      .solution-card p { font-size: 0.9rem; }
+      .value-stat-label { font-size: 0.92rem; }
+      .footer-logo img { height: 24px; }
+    }
   </style>
 </head>
 <body>
@@ -388,9 +412,8 @@
   <section class="hero" id="hero">
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">Coaching IA pour le Retail & le Luxe</div>
         <h1>L'entraînement retail qui ressemble à la <em>vraie vente.</em></h1>
-        <p class="hero-desc">Des clients virtuels IA pour améliorer l'écoute, la posture et la performance de vos Client advisors — sans risque pour l'image de marque.</p>
+        <p class="hero-desc">Des clients virtuels IA pour améliorer l'écoute,<br>la posture et la performance de vos Client advisors,<br>sans risque pour l'image de marque.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn-primary">Découvrir en action →</a>
           <a href="#solution" class="btn-secondary">En savoir plus</a>
@@ -421,9 +444,9 @@
     <div class="container">
       <p class="logos-label">Adopté par des acteurs majeurs du retail et du luxe</p>
       <div class="logos-row">
-        <img src="../../assets/images/logo-lvmh.png" alt="LVMH" style="opacity: 0.7;">
-        <img src="../../assets/images/logo-amazon.png" alt="Amazon">
-        <img src="../../assets/images/logo-carrefour.png" alt="Carrefour">
+        <img src="../../assets/images/logo-lvmh.png" alt="LVMH" style="opacity: 0.85;">
+        <img src="../../assets/images/logo-amazon.png" alt="Amazon" style="opacity: 0.85; filter: contrast(1.3) saturate(1.2);">
+        <img src="../../assets/images/logo-carrefour.png" alt="Carrefour" style="opacity: 0.85; filter: contrast(1.3) saturate(1.2);">
       </div>
     </div>
   </section>
@@ -568,7 +591,7 @@
     <div class="container">
       <div class="text-center" style="margin-bottom: 48px;">
         <span class="section-label">Louis Vuitton Maison Champs-Élysées</span>
-        <h2 class="section-title">Et si on commençait avec votre boutique<br>au 101 avenue des Champs-Élysées, 75008 Paris, France ?</h2>
+        <h2 class="section-title">Et si on commençait avec votre boutique<br>au 101 avenue des Champs-Élysées, 75008 Paris ?</h2>
         <p class="section-subtitle mx-auto" style="text-align:center;">Amenez votre clientelling à l'excellence de votre clientèle</p>
       </div>
       <div class="boutique-block fade-in">
@@ -576,7 +599,7 @@
           <img src="https://raw.githubusercontent.com/Tony2Metagora/landing-workflows/master/retail-luxe/assets/images/boutiques/Boutique%20Louis%20Vuitton%20fr.jpg" alt="Louis Vuitton Maison Champs-Élysées">
         </div>
         <div class="boutique-content">
-          <p class="boutique-address">101 avenue des Champs-Élysées, 75008 Paris, France</p>
+          <p class="boutique-address">101 avenue des Champs-Élysées, 75008 Paris</p>
           <div class="kpi-cards">
             <div class="kpi-card">
               <div class="kpi-number">+3 à +5 pts</div>
@@ -584,10 +607,10 @@
             </div>
             <div class="kpi-card">
               <div class="kpi-number">10–15%</div>
-              <div class="kpi-label">taux de transformation moyen en boutique luxe mode & maroquinerie — Metagora vous fait passer au niveau supérieur</div>
+              <div class="kpi-label">taux de transformation moyen en boutique luxe mode & maroquinerie, Metagora vous fait passer au niveau supérieur</div>
             </div>
           </div>
-          <p class="boutique-hook">3 à 5 points de transfo gagnés pour vos équipes retail — mesurables dès le premier mois.</p>
+          <p class="boutique-hook">3 à 5 points de transfo gagnés pour vos équipes retail, mesurables dès le premier mois.</p>
           <a href="#contact" class="btn-primary" style="align-self: flex-start;">Prendre rendez-vous →</a>
         </div>
       </div>
@@ -616,7 +639,7 @@
         <div class="testimonial-quote">On sait maintenant que nos conseillers maîtrisent notre cérémonial de vente avant même de rencontrer un vrai client. Ça change tout.</div>
         <div class="testimonial-author">
           <div class="testimonial-avatar">DR</div>
-          <div class="testimonial-info"><strong>Directeur Retail</strong><span>Maison de luxe — Réseau Europe</span></div>
+          <div class="testimonial-info"><strong>Directeur Retail</strong><span>Maison de luxe, Réseau Europe</span></div>
         </div>
       </div>
     </div>
@@ -658,7 +681,7 @@
         <div class="pricing-badge">Offre Boutique Luxe</div>
         <h3>Pour une boutique XS</h3>
         <div class="pricing-price">350€<span style="font-size:1rem; color:#94a3b8;">/mois</span></div>
-        <p class="pricing-price-sub">À partir de — Tarif personnalisé selon le réseau</p>
+        <p class="pricing-price-sub">À partir de<br>Tarif personnalisé selon le réseau</p>
         <ul class="pricing-features">
           <li><span class="pf-check">✓</span> Sans limite de scénario</li>
           <li><span class="pf-check">✓</span> + de 90 langues</li>
@@ -724,7 +747,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-logo">Meta<span>gora</span></div>
+        <div class="footer-logo"><img src="../../assets/images/Logo-Metagora-Black.png" alt="Metagora" style="height:28px;width:auto;"></div>
         <p class="footer-copy">© 2025 Metagora. Tous droits réservés.</p>
       </div>
     </div>
