@@ -45,9 +45,9 @@
         "cta": "Demander une démo"
       },
       "hero": {
-        "badge": "Coaching IA pour le Retail & le Luxe",
+        "badge": "",
         "title": "L'entraînement retail qui ressemble à la <em>vraie vente.</em>",
-        "desc": "Des clients virtuels IA pour améliorer l'écoute, la posture et la performance de vos {{clientType}} — sans risque pour l'image de marque.",
+        "desc": "Des clients virtuels IA pour améliorer l'écoute,<br>la posture et la performance de vos {{clientType}},<br>sans risque pour l'image de marque.",
         "ctaPrimary": "Découvrir en action",
         "ctaSecondary": "En savoir plus",
         "meta": "Aucun matériel · Sessions < 5 min · Déploiement rapide sur tout le réseau"
@@ -175,7 +175,7 @@
           "title": "Des prix adaptés à votre structure.",
           "subtitle": "Pour une boutique XS",
           "price": "350€",
-          "note": "À partir de — Tarif personnalisé selon le réseau",
+          "note": "À partir de<br>Tarif personnalisé selon le réseau",
           "features": [
             "Sans limite de scénario",
             "+ de 90 langues",
@@ -209,14 +209,14 @@
         "quote": "On sait maintenant que nos conseillers maîtrisent notre cérémonial de vente avant même de rencontrer un vrai client. Ça change tout.",
         "initials": "DR",
         "role": "Directeur Retail",
-        "company": "Maison de luxe — Réseau Europe"
+        "company": "Maison de luxe, Réseau Europe"
       },
       "store": {
         "headline": "Et si on commençait avec votre boutique<br>au {{storeAddress}} ?",
         "subheadline": "Amenez votre clientelling à l'excellence de votre clientèle",
         "kpi1": "de taux de conversion sur les clients qualifiés, à périmètre comparable",
-        "kpi2": "taux de transformation moyen en boutique luxe mode & maroquinerie — Metagora vous fait passer au niveau supérieur",
-        "hook": "3 à 5 points de transfo gagnés pour vos équipes retail — mesurables dès le premier mois.",
+        "kpi2": "taux de transformation moyen en boutique luxe mode & maroquinerie, Metagora vous fait passer au niveau supérieur",
+        "hook": "3 à 5 points de transfo gagnés pour vos équipes retail, mesurables dès le premier mois.",
         "cta": "Prendre rendez-vous"
       },
       "footer": {
@@ -235,9 +235,9 @@
         "cta": "Request a demo"
       },
       "hero": {
-        "badge": "AI Coaching for Retail & Luxury",
+        "badge": "",
         "title": "Retail training that feels like <em>real selling.</em>",
-        "desc": "AI virtual clients to improve listening, posture and performance of your {{clientType}} — with no risk to brand image.",
+        "desc": "AI virtual clients to improve listening,<br>posture and performance of your {{clientType}},<br>with no risk to brand image.",
         "ctaPrimary": "See it in action",
         "ctaSecondary": "Learn more",
         "meta": "No hardware · Sessions < 5 min · Fast network-wide deployment"
@@ -365,7 +365,7 @@
           "title": "Pricing adapted to your structure.",
           "subtitle": "For an XS store",
           "price": "€350",
-          "note": "Starting from — Custom pricing based on network",
+          "note": "Starting from<br>Custom pricing based on network",
           "features": [
             "Unlimited scenarios",
             "90+ languages",
@@ -399,14 +399,14 @@
         "quote": "We now know our advisors master our sales ceremony before meeting a real customer. It changes everything.",
         "initials": "RD",
         "role": "Retail Director",
-        "company": "Luxury House — Europe Network"
+        "company": "Luxury House, Europe Network"
       },
       "store": {
         "headline": "What if we started with your store<br>at {{storeAddress}}?",
         "subheadline": "Bring your clienteling to the excellence of your clientele",
         "kpi1": "conversion rate increase on qualified clients, like-for-like",
-        "kpi2": "average conversion rate in luxury fashion & leather goods — Metagora takes you to the next level",
-        "hook": "3 to 5 conversion points gained for your retail teams — measurable from month one.",
+        "kpi2": "average conversion rate in luxury fashion & leather goods, Metagora takes you to the next level",
+        "hook": "3 to 5 conversion points gained for your retail teams, measurable from month one.",
         "cta": "Book a meeting"
       },
       "footer": {
