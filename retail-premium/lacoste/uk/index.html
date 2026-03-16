@@ -365,6 +365,30 @@
     .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
     .bg-soft { background: var(--bg-soft); }
+
+    /* ── MOBILE FONT SIZE OVERRIDES ── */
+    @media (max-width: 768px) {
+      .hero-meta { font-size: 0.88rem; font-weight: 500; }
+      .process-step h3 { font-size: 1.1rem; }
+      .process-step p { font-size: 0.92rem; }
+      .section-label { font-size: 0.85rem; }
+      .comparison-card h3 { font-size: 1.15rem; }
+      .comparison-list li { font-size: 0.95rem; }
+      .benefit-list li { font-size: 1rem; }
+      .boutique-address { font-size: 1rem; }
+      .kpi-label { font-size: 0.92rem; }
+      .kpi-number { font-size: 2rem; }
+      .boutique-hook { font-size: 1.05rem; }
+      .pilot-list li { font-size: 1.02rem; }
+      .pilot-tagline { font-size: 1.2rem; }
+      .pricing-price-sub { font-size: 0.92rem; line-height: 1.6; }
+      .section-title { font-size: clamp(1.7rem, 4vw, 2.4rem); }
+      .section-subtitle { font-size: 1.02rem; }
+      .solution-card h4 { font-size: 1rem; }
+      .solution-card p { font-size: 0.9rem; }
+      .value-stat-label { font-size: 0.92rem; }
+      .footer-logo img { height: 24px; }
+    }
   </style>
 </head>
 <body>
@@ -388,9 +412,8 @@
   <section class="hero" id="hero">
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">AI Coaching for Retail & Luxury</div>
         <h1>Retail training that feels like <em>real selling.</em></h1>
-        <p class="hero-desc">AI virtual clients to improve listening, posture and performance of your conseillers — with no risk to brand image.</p>
+        <p class="hero-desc">AI virtual clients to improve listening,<br>posture and performance of your advisors,<br>with no risk to brand image.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn-primary">See it in action →</a>
           <a href="#solution" class="btn-secondary">Learn more</a>
@@ -421,9 +444,9 @@
     <div class="container">
       <p class="logos-label">Trusted by major retail and luxury players</p>
       <div class="logos-row">
-        <img src="https://metagora-tech.fr/retail-luxe/assets/images/logo-lvmh.png" alt="LVMH" style="opacity: 0.7;">
-        <img src="https://metagora-tech.fr/retail-luxe/assets/images/logo-amazon.png" alt="Amazon">
-        <img src="https://metagora-tech.fr/retail-luxe/assets/images/logo-carrefour.png" alt="Carrefour">
+        <img src="https://metagora-tech.fr/retail-luxe/assets/images/logo-lvmh.png" alt="LVMH" style="opacity: 0.85;">
+        <img src="https://metagora-tech.fr/retail-luxe/assets/images/logo-amazon.png" alt="Amazon" style="opacity: 0.85; filter: contrast(1.3) saturate(1.2);">
+        <img src="https://metagora-tech.fr/retail-luxe/assets/images/logo-carrefour.png" alt="Carrefour" style="opacity: 0.85; filter: contrast(1.3) saturate(1.2);">
       </div>
     </div>
   </section>
@@ -461,7 +484,7 @@
           <h2 class="section-title">Traditional retail training can't keep up.</h2>
           <p class="section-subtitle">Training high-performing retail teams has become a structural challenge. Customer experience becomes uneven and sales performance suffers.</p>
           <ul class="benefit-list">
-            <li><span class="check"></span>A new conseillers takes 6 to 12 months to become productive</li>
+            <li><span class="check"></span>A new advisors takes 6 to 12 months to become productive</li>
             <li><span class="check"></span>70% of training is forgotten within a week</li>
             <li><span class="check"></span>Managers lack time to coach</li>
             <li><span class="check"></span>Excellence dilutes from store to store</li>
@@ -477,7 +500,7 @@
       <div class="benefit-block reverse fade-in">
         <div class="benefit-text">
           <span class="section-label">Field results</span>
-          <h2 class="section-title">Prepare your conseillers before the first real customer.</h2>
+          <h2 class="section-title">Prepare your advisors before the first real customer.</h2>
           <p class="section-subtitle">Realistic simulations that build confidence, sharpen judgment and train to respond under pressure.</p>
           <ul class="benefit-list">
             <li><span class="check"></span>Authentic conversations with our simulation</li>
@@ -584,10 +607,10 @@
             </div>
             <div class="kpi-card">
               <div class="kpi-number">10–15%</div>
-              <div class="kpi-label">average conversion rate in luxury fashion & leather goods — Metagora takes you to the next level</div>
+              <div class="kpi-label">average conversion rate in luxury fashion & leather goods, Metagora takes you to the next level</div>
             </div>
           </div>
-          <p class="boutique-hook">3 to 5 conversion points gained for your retail teams — measurable from month one.</p>
+          <p class="boutique-hook">3 to 5 conversion points gained for your retail teams, measurable from month one.</p>
           <a href="#contact" class="btn-primary" style="align-self: flex-start;">Book a meeting →</a>
         </div>
       </div>
@@ -616,7 +639,7 @@
         <div class="testimonial-quote">We now know our advisors master our sales ceremony before meeting a real customer. It changes everything.</div>
         <div class="testimonial-author">
           <div class="testimonial-avatar">RD</div>
-          <div class="testimonial-info"><strong>Retail Director</strong><span>Luxury House — Europe Network</span></div>
+          <div class="testimonial-info"><strong>Retail Director</strong><span>Luxury House, Europe Network</span></div>
         </div>
       </div>
     </div>
@@ -658,7 +681,7 @@
         <div class="pricing-badge">Offre Boutique Premium</div>
         <h3>For an XS store</h3>
         <div class="pricing-price">€350<span style="font-size:1rem; color:#94a3b8;">/mois</span></div>
-        <p class="pricing-price-sub">Starting from — Custom pricing based on network</p>
+        <p class="pricing-price-sub">Starting from<br>Custom pricing based on network</p>
         <ul class="pricing-features">
           <li><span class="pf-check">✓</span> Unlimited scenarios</li>
           <li><span class="pf-check">✓</span> 90+ languages</li>
@@ -724,7 +747,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-logo">Meta<span>gora</span></div>
+        <div class="footer-logo"><img src="https://metagora-tech.fr/retail-luxe/assets/images/Logo-Metagora-Black.png" alt="Metagora" style="height:28px;width:auto;"></div>
         <p class="footer-copy">© 2025 Metagora. All rights reserved.</p>
       </div>
     </div>
